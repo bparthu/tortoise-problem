@@ -1,0 +1,27 @@
+{
+  "name": "turtle-command",
+  "version": "1.0.0",
+  "description": "track turtle movement",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bparthu/turtle-command.git"
+  },
+  "author": "Parthasarathy B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bparthu/turtle-command/issues"
+  },
+  "homepage": "https://github.com/bparthu/turtle-command#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4"
+  }
+}
