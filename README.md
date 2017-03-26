@@ -1,4 +1,4 @@
-# tortoise-problem
+# Turtle-Command
 
 # Problem statement:
 Turtle is on a N * N grid, with N obstacles. The turtle can only move F orward one position
@@ -14,3 +14,18 @@ FFFRRFLF
 
 ## Output:
 2,3 E
+
+# Design
+* Language chosen - Javascript
+* Thought process:
+  * On functional requirement: 
+    * randomize function (n) for choosing n x n square grid
+    * Create directions array and have a circular pointer implemented to navigate through direction
+    * Create a coordinate class (x,y and direction of movement) and instantiate a 'turtle' with move functionality :
+  * On Non-functional requirement (If time permits):
+    * Prioritize on writing unit-testable code.
+    * Angularize the code (with bootstrap grid for better visualization).
+    * Host it on heroku.
+    * Optional: write a Node/ Express and Mongo for storing the history of inputs and outputs.
+   * Future enhancements identified:
+      * TBD
