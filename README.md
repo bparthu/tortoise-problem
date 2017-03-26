@@ -15,16 +15,27 @@ FFFRRFLF
 ## Output:
 2,3 E
 
+#Working prototype:
+clone the repository and run below commands
+
+```
+npm install
+bower install
+npm test
+```
+
 # Design
 * Language chosen - Javascript
 * Thought process:
   * On functional requirement: 
-    * randomize function (n) for choosing n x n square grid
-    * Create directions array and have a circular pointer implemented to navigate through direction
-    * Create a coordinate class (x,y and direction of movement) and instantiate a 'turtle' with move functionality :
-  * On Non-functional requirement (If time permits):
-    * Prioritize on writing unit-testable code.
+    * ~~randomize function (n) for choosing n x n square grid~~
+    * ~~Create directions array and have a circular pointer implemented to navigate through direction~~
+    * ~~Create a coordinate class (x,y and direction of movement) and instantiate a 'turtle' with move functionality~~
+    * code refactor.
     * Angularize the code (with bootstrap grid for better visualization).
+  * On Non-functional requirement (If time permits):
+    * ~~Prioritize on writing unit-testable code.~~
+    * Refactor the unit test after "anglarizing" the app.
     * Host it on heroku.
     * Optional: write a Node/ Express and Mongo for storing the history of inputs and outputs.
    * Future enhancements identified:
