@@ -68,12 +68,13 @@ var CoordinateContext = (function(){
 
 
 var AppContext = (function(){
-	var GRID_SIZE;
-	var MIN = 5;
-	var MAX = 30;
-
-	var App = function(){
+	var App = function(inputString){
 		var self = this;
+		var GRID_SIZE;
+		var MIN = 5;
+		var MAX = 30;
+		var INPUT_PATTERN = /^[FLR\s]+$/i;
+		this.inputString = null;
 		this.generateGridSize = function(){
 			GRID_SIZE = lodash.random(MIN,MAX);
 		};
@@ -81,6 +82,11 @@ var AppContext = (function(){
 			return GRID_SIZE;
 		};
 		var __construct = function(){
+			if(inputString && INPUT_PATTERN.test(inputString)){
+				self.inputString = inputString.replace(" ","").toUpperCase();
+			}else{
+				throw new Error("Invalid Input");
+			}
 			self.generateGridSize();
 		}();
 	};
