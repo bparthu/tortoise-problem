@@ -4,6 +4,8 @@ var window = window || {};
 
 window.contexts = window.contexts || [];
 
+var lodash = _;
+
 var DirectionContext = (function(){
 	var Direction = function(){
 		var self =this;
@@ -32,30 +34,27 @@ var DirectionContext = (function(){
 	return Direction
 })();
 
-window.contexts['DirectionContext'] = DirectionContext;
-/*(function(){
 
-		var randomize = function(min, max){
-			return Math.floor(Math.random() * (max - min + 1)) + min;
-		}
+var AppContext = (function(){
+	var GRID_SIZE;
+	var MIN = 5;
+	var MAX = 30;
 
-
-		var GRID_SIZE;
-		var MIN = 5;
-		var MAX = 30;
-
-
-		var App = function(){
-			var self = this;
-			this.generateGridSize = function(){
-				GRID_SIZE = randomize(MIN,MAX);
-			};
-			var __construct = function(){
-				self.generateGridSize();
-			}();
+	var App = function(){
+		var self = this;
+		this.generateGridSize = function(){
+			GRID_SIZE = lodash.random(MIN,MAX);
 		};
+		this.getGridSize = function(){
+			return GRID_SIZE;
+		};
+		var __construct = function(){
+			self.generateGridSize();
+		}();
+	};
 
-		var turtleApp = new App();
-		console.log('generated grid size of %s x %s',GRID_SIZE,GRID_SIZE);
+	return App;
+})();
 
-})();*/
+window.contexts['DirectionContext'] = DirectionContext;
+window.contexts['AppContext'] = AppContext;
