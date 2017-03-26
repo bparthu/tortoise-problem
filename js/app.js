@@ -34,6 +34,38 @@ var DirectionContext = (function(){
 	return Direction
 })();
 
+var CoordinateContext = (function(){
+	var Coordinate = function(){
+		var x;
+		var y;
+		var direction;
+
+		this.getX = function(){
+			return x;
+		};
+
+		this.getY = function(){
+			return y;
+		};
+
+		this.getDirection = function(){
+			return direction;
+		};
+
+		var __construct = function() {
+			x = 1;
+			y = 1;
+			direction = 'N';
+		}();
+	};
+
+	Coordinate.prototype.toString = function(){
+		return this.getX()+','+this.getY()+' '+this.getDirection();
+	};
+
+	return Coordinate;
+})();
+
 
 var AppContext = (function(){
 	var GRID_SIZE;
@@ -58,3 +90,4 @@ var AppContext = (function(){
 
 window.contexts['DirectionContext'] = DirectionContext;
 window.contexts['AppContext'] = AppContext;
+window.contexts['CoordinateContext'] = CoordinateContext;

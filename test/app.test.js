@@ -59,3 +59,15 @@ describe('App initialize', function(){
 		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
 	});
 });
+
+describe('Turtle creation',function(){
+	var Coordinate;
+	beforeEach(function(){
+		Coordinate = window.contexts['CoordinateContext'];
+	});
+
+	it('should instantiate a turtle',function(){
+		var turtle = new Coordinate();
+		expect(turtle.toString()).toBe('1,1 N');
+	});
+});
