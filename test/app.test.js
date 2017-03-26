@@ -8,18 +8,18 @@ describe('Help turtle decide a direction to navigate', function() {
 
 	it('should help turtle goRight',function(){
 		var direction = new Direction();
-		expect(direction.goRight().getCurrentDirection()).toBe('E');
-		expect(direction.goRight().getCurrentDirection()).toBe('S');
-		expect(direction.goRight().getCurrentDirection()).toBe('W');
-		expect(direction.goRight().getCurrentDirection()).toBe('N');
+		expect(direction.goRight()).toBe('E');
+		expect(direction.goRight()).toBe('S');
+		expect(direction.goRight()).toBe('W');
+		expect(direction.goRight()).toBe('N');
 	});
 
 	it('should help turtle goLeft',function(){
 		var direction = new Direction();
-		expect(direction.goLeft().getCurrentDirection()).toBe('W');
-		expect(direction.goLeft().getCurrentDirection()).toBe('S');
-		expect(direction.goLeft().getCurrentDirection()).toBe('E');
-		expect(direction.goLeft().getCurrentDirection()).toBe('N');
+		expect(direction.goLeft()).toBe('W');
+		expect(direction.goLeft()).toBe('S');
+		expect(direction.goLeft()).toBe('E');
+		expect(direction.goLeft()).toBe('N');
 	});
 
 });
@@ -65,6 +65,12 @@ describe('App initialize', function(){
 			expect(turtleApp.getGridSize()).not.toBeLessThan(5);
 		}
 	});
+
+	it('should move the turtle with the given input string',function(){
+		var inputString = 'FRFFL';
+		var turtleApp = new App(inputString);
+		turtleApp.moveTurtle();
+	})
 });
 
 describe('Turtle creation',function(){
