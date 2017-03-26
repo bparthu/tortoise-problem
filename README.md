@@ -1,4 +1,4 @@
-# Turtle-Command
+# Turtle-Command [![Build Status](https://travis-ci.org/bparthu/turtle-command.svg?branch=master)](https://travis-ci.org/bparthu/turtle-command)
 
 # Problem statement:
 Turtle is on a N * N grid, with N obstacles. The turtle can only move F orward one position
