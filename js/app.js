@@ -48,6 +48,34 @@ var CoordinateContext = (function(){
 			return y;
 		};
 
+		this.incrementX = function(GRID_SIZE){
+			if(x < GRID_SIZE){
+				x += 1;
+			}
+		}
+
+		this.decrementX = function(GRID_SIZE){
+			if(x > 1){
+				x -= 1;
+			}
+		}
+
+		this.incrementY = function(GRID_SIZE){
+			if(y < GRID_SIZE){
+				y += 1;
+			}
+		}
+
+		this.decrementY = function(GRID_SIZE){
+			if(y > 1){
+				y -= 1;
+			}
+		}
+
+		this.changeDirection = function(newDirection){
+			direction = newDirection;
+		}
+
 		this.getDirection = function(){
 			return direction;
 		};

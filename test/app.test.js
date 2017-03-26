@@ -60,23 +60,10 @@ describe('App initialize', function(){
 	it('should generate grid size between 5 and 30',function(){
 		var inputString = 'FLR';
 		var turtleApp = new App(inputString);
-		expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
-		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
-		var turtleApp = new App(inputString);
-		expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
-		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
-		var turtleApp = new App(inputString);
-		expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
-		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
-		var turtleApp = new App(inputString);
-		expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
-		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
-		var turtleApp = new App(inputString);
-		expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
-		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
-		var turtleApp = new App(inputString);
-		expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
-		expect(turtleApp.getGridSize()).not.toBeLessThan(5);
+		for(var i=0;i<100;i++){
+			expect(turtleApp.getGridSize()).not.toBeGreaterThan(30);
+			expect(turtleApp.getGridSize()).not.toBeLessThan(5);
+		}
 	});
 });
 
@@ -89,5 +76,53 @@ describe('Turtle creation',function(){
 	it('should instantiate a turtle',function(){
 		var turtle = new Coordinate();
 		expect(turtle.toString()).toBe('1,1 N');
+	});
+
+	it('should increment X',function(){
+		var turtle = new Coordinate();
+		turtle.incrementX(5);
+		expect(turtle.toString()).toBe('2,1 N');
+		for(var i=0;i<10;i++){
+			turtle.incrementX(5);
+		}
+		expect(turtle.toString()).toBe('5,1 N');
+	});
+
+	it('should decrement X',function(){
+		var turtle = new Coordinate();
+		turtle.incrementX(5);
+		turtle.decrementX(5);
+		expect(turtle.toString()).toBe('1,1 N');
+		for(var i=0;i<10;i++){
+			turtle.decrementX(5);
+		}
+		expect(turtle.toString()).toBe('1,1 N');
+	});
+
+	it('should increment Y',function(){
+		var turtle = new Coordinate();
+		turtle.incrementY(5);
+		expect(turtle.toString()).toBe('1,2 N');
+		for(var i=0;i<10;i++){
+			turtle.incrementY(5);
+		}
+		expect(turtle.toString()).toBe('1,5 N');
+	});
+
+	it('should decrement X',function(){
+		var turtle = new Coordinate();
+		turtle.incrementY(5);
+		turtle.decrementY(5);
+		expect(turtle.toString()).toBe('1,1 N');
+		for(var i=0;i<10;i++){
+			turtle.decrementY(5);
+		}
+		expect(turtle.toString()).toBe('1,1 N');
+	});
+
+	it('should change direction',function(){
+		var turtle = new Coordinate();
+		turtle.changeDirection('E');
+		expect(turtle.getDirection()).toBe('E');
 	});
 });
