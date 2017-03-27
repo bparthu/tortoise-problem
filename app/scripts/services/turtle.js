@@ -8,7 +8,7 @@
  * Factory in the turtleCommandApp.
  */
 angular.module('turtleCommandApp')
-  .factory('Turtle', function () {
+  .factory('Turtle', function (Compass) {
     var x = 1;
     var y = 1;
     var direction = 'N';
@@ -52,6 +52,21 @@ angular.module('turtleCommandApp')
       },
       whereAmI: function(){
         return this.getX()+','+this.getY()+' '+this.getDirection();
+      },
+      move: function(command) {
+        switch(command){
+          case 'F':
+            break;
+          case 'R':
+            this.changeDirection(Compass.goRight());
+            break;
+          case 'L':
+            this.changeDirection(Compass.goLeft());
+            break;
+          default:
+            throw new Error('Invalid Direction');
+        }
+        return this;
       }
     };
   });

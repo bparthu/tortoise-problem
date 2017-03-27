@@ -7,8 +7,10 @@ describe('Service: Turtle', function () {
 
   // instantiate service
   var Turtle;
-  beforeEach(inject(function (_Turtle_) {
+  var Compass;
+  beforeEach(inject(function (_Turtle_,_Compass_) {
     Turtle = _Turtle_;
+    Compass = _Compass_;
   }));
 
   it('should return x co-ordinate', function () {
@@ -49,6 +51,24 @@ describe('Service: Turtle', function () {
     Turtle.incrementY(5);
     Turtle.changeDirection('S');
     expect(Turtle.whereAmI()).toBe('3,4 S');
+  });
+
+  it('should move the turtle based on command',function(){
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('1,1 N');
+    Turtle.move('R');
+    expect(Turtle.whereAmI()).toBe('1,1 E');
+    Turtle.move('R');
+    expect(Turtle.whereAmI()).toBe('1,1 S');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('1,1 S');
+    Turtle.move('L');
+    expect(Turtle.whereAmI()).toBe('1,1 E');
+    try{
+      Turtle.move('A');
+    }catch(e){
+      expect(e.message).toBe('Invalid Direction');
+    }
   });
 
 });
