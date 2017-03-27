@@ -8,9 +8,11 @@ describe('Service: Turtle', function () {
   // instantiate service
   var Turtle;
   var Compass;
-  beforeEach(inject(function (_Turtle_,_Compass_) {
+  var Grid;
+  beforeEach(inject(function (_Turtle_,_Compass_,_Grid_) {
     Turtle = _Turtle_;
     Compass = _Compass_;
+    Grid = _Grid_;
   }));
 
   it('should return x co-ordinate', function () {
@@ -22,21 +24,25 @@ describe('Service: Turtle', function () {
   });
 
   it('should increment or decrement x co-ordinate',function(){
-    expect(Turtle.incrementX(2).getX()).toBe(2);
-    expect(Turtle.incrementX(2).getX()).toBe(2);
-    expect(Turtle.incrementX(3).getX()).toBe(3);
-    expect(Turtle.decrementX(3).getX()).toBe(2);
-    expect(Turtle.decrementX(3).getX()).toBe(1);
-    expect(Turtle.decrementX(3).getX()).toBe(1);
+    Grid.setGridSize(2);
+    expect(Turtle.incrementX().getX()).toBe(2);
+    expect(Turtle.incrementX().getX()).toBe(2);
+    Grid.setGridSize(3);
+    expect(Turtle.incrementX().getX()).toBe(3);
+    expect(Turtle.decrementX().getX()).toBe(2);
+    expect(Turtle.decrementX().getX()).toBe(1);
+    expect(Turtle.decrementX().getX()).toBe(1);
   });
 
   it('should increment or decrement y co-ordinate',function(){
-    expect(Turtle.incrementY(2).getY()).toBe(2);
-    expect(Turtle.incrementY(2).getY()).toBe(2);
-    expect(Turtle.incrementY(3).getY()).toBe(3);
-    expect(Turtle.decrementY(3).getY()).toBe(2);
-    expect(Turtle.decrementY(3).getY()).toBe(1);
-    expect(Turtle.decrementY(3).getY()).toBe(1);
+    Grid.setGridSize(2);
+    expect(Turtle.incrementY().getY()).toBe(2);
+    expect(Turtle.incrementY().getY()).toBe(2);
+    Grid.setGridSize(3);
+    expect(Turtle.incrementY().getY()).toBe(3);
+    expect(Turtle.decrementY().getY()).toBe(2);
+    expect(Turtle.decrementY().getY()).toBe(1);
+    expect(Turtle.decrementY().getY()).toBe(1);
   });
 
   it('should change direction',function(){
@@ -44,11 +50,12 @@ describe('Service: Turtle', function () {
   });
 
   it('should tell the co-ordinate of turtle in human readable format',function(){
-    Turtle.incrementX(5);
-    Turtle.incrementX(5);
-    Turtle.incrementY(5);
-    Turtle.incrementY(5);
-    Turtle.incrementY(5);
+    Grid.setGridSize(5);
+    Turtle.incrementX();
+    Turtle.incrementX();
+    Turtle.incrementY();
+    Turtle.incrementY();
+    Turtle.incrementY();
     Turtle.changeDirection('S');
     expect(Turtle.whereAmI()).toBe('3,4 S');
   });

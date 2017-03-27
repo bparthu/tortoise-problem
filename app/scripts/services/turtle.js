@@ -8,7 +8,7 @@
  * Factory in the turtleCommandApp.
  */
 angular.module('turtleCommandApp')
-  .factory('Turtle', function (Compass) {
+  .factory('Turtle', function (Compass, Grid) {
     var x = 1;
     var y = 1;
     var direction = 'N';
@@ -19,8 +19,8 @@ angular.module('turtleCommandApp')
       getY: function(){
         return y;
       },
-      incrementX: function(GRID_SIZE){
-        if(x < GRID_SIZE){
+      incrementX: function(){
+        if(x < Grid.getGridSize()){
           x += 1;
         }
         return this;
@@ -31,8 +31,8 @@ angular.module('turtleCommandApp')
         }
         return this;
       },
-      incrementY: function(GRID_SIZE){
-        if(y < GRID_SIZE){
+      incrementY: function(){
+        if(y < Grid.getGridSize()){
           y += 1;
         }
         return this;
