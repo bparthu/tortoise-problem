@@ -1,0 +1,1783 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.34
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ 'C:\\Users\\z821366\\Desktop\\Mylocalgitrepo\\turtle-command',
+5 verbose install   [ 'express',
+5 verbose install     'gzippo',
+5 verbose install     'morgan',
+5 verbose install     'autoprefixer-core',
+5 verbose install     'grunt',
+5 verbose install     'grunt-angular-templates',
+5 verbose install     'grunt-concurrent',
+5 verbose install     'grunt-contrib-clean',
+5 verbose install     'grunt-contrib-concat',
+5 verbose install     'grunt-contrib-connect',
+5 verbose install     'grunt-contrib-copy',
+5 verbose install     'grunt-contrib-cssmin',
+5 verbose install     'grunt-contrib-htmlmin',
+5 verbose install     'grunt-contrib-imagemin',
+5 verbose install     'grunt-contrib-jshint',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-filerev',
+5 verbose install     'grunt-google-cdn',
+5 verbose install     'grunt-jscs',
+5 verbose install     'grunt-newer',
+5 verbose install     'grunt-ng-annotate',
+5 verbose install     'grunt-postcss',
+5 verbose install     'grunt-svgmin',
+5 verbose install     'grunt-usemin',
+5 verbose install     'grunt-wiredep',
+5 verbose install     'jasmine-core',
+5 verbose install     'jit-grunt',
+5 verbose install     'jshint-stylish',
+5 verbose install     'karma',
+5 verbose install     'karma-jasmine',
+5 verbose install     'karma-phantomjs-launcher',
+5 verbose install     'phantomjs-prebuilt',
+5 verbose install     'time-grunt' ] ]
+6 info preinstall turtlecommand@
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'express@^4.15.2', null ]
+9 verbose cache add name=undefined spec="express@^4.15.2" args=["express@^4.15.2",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'express@^4.15.2',
+10 verbose parsed url   path: 'express@^4.15.2',
+10 verbose parsed url   href: 'express@^4.15.2' }
+11 verbose cache add [ 'gzippo@^0.2.0', null ]
+12 verbose cache add name=undefined spec="gzippo@^0.2.0" args=["gzippo@^0.2.0",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'gzippo@^0.2.0',
+13 verbose parsed url   path: 'gzippo@^0.2.0',
+13 verbose parsed url   href: 'gzippo@^0.2.0' }
+14 verbose cache add [ 'morgan@^1.8.1', null ]
+15 verbose cache add name=undefined spec="morgan@^1.8.1" args=["morgan@^1.8.1",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'morgan@^1.8.1',
+16 verbose parsed url   path: 'morgan@^1.8.1',
+16 verbose parsed url   href: 'morgan@^1.8.1' }
+17 verbose cache add [ 'autoprefixer-core@^5.2.1', null ]
+18 verbose cache add name=undefined spec="autoprefixer-core@^5.2.1" args=["autoprefixer-core@^5.2.1",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'autoprefixer-core@^5.2.1',
+19 verbose parsed url   path: 'autoprefixer-core@^5.2.1',
+19 verbose parsed url   href: 'autoprefixer-core@^5.2.1' }
+20 verbose cache add [ 'grunt@^0.4.5', null ]
+21 verbose cache add name=undefined spec="grunt@^0.4.5" args=["grunt@^0.4.5",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'grunt@^0.4.5',
+22 verbose parsed url   path: 'grunt@^0.4.5',
+22 verbose parsed url   href: 'grunt@^0.4.5' }
+23 verbose cache add [ 'grunt-angular-templates@^0.5.7', null ]
+24 verbose cache add name=undefined spec="grunt-angular-templates@^0.5.7" args=["grunt-angular-templates@^0.5.7",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'grunt-angular-templates@^0.5.7',
+25 verbose parsed url   path: 'grunt-angular-templates@^0.5.7',
+25 verbose parsed url   href: 'grunt-angular-templates@^0.5.7' }
+26 verbose cache add [ 'grunt-concurrent@^1.0.0', null ]
+27 verbose cache add name=undefined spec="grunt-concurrent@^1.0.0" args=["grunt-concurrent@^1.0.0",null]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: 'grunt-concurrent@^1.0.0',
+28 verbose parsed url   path: 'grunt-concurrent@^1.0.0',
+28 verbose parsed url   href: 'grunt-concurrent@^1.0.0' }
+29 verbose cache add [ 'grunt-contrib-clean@^0.6.0', null ]
+30 verbose cache add name=undefined spec="grunt-contrib-clean@^0.6.0" args=["grunt-contrib-clean@^0.6.0",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'grunt-contrib-clean@^0.6.0',
+31 verbose parsed url   path: 'grunt-contrib-clean@^0.6.0',
+31 verbose parsed url   href: 'grunt-contrib-clean@^0.6.0' }
+32 verbose cache add [ 'grunt-contrib-concat@^0.5.0', null ]
+33 verbose cache add name=undefined spec="grunt-contrib-concat@^0.5.0" args=["grunt-contrib-concat@^0.5.0",null]
+34 verbose parsed url { protocol: null,
+34 verbose parsed url   slashes: null,
+34 verbose parsed url   auth: null,
+34 verbose parsed url   host: null,
+34 verbose parsed url   port: null,
+34 verbose parsed url   hostname: null,
+34 verbose parsed url   hash: null,
+34 verbose parsed url   search: null,
+34 verbose parsed url   query: null,
+34 verbose parsed url   pathname: 'grunt-contrib-concat@^0.5.0',
+34 verbose parsed url   path: 'grunt-contrib-concat@^0.5.0',
+34 verbose parsed url   href: 'grunt-contrib-concat@^0.5.0' }
+35 verbose cache add [ 'grunt-contrib-connect@^0.9.0', null ]
+36 verbose cache add name=undefined spec="grunt-contrib-connect@^0.9.0" args=["grunt-contrib-connect@^0.9.0",null]
+37 verbose parsed url { protocol: null,
+37 verbose parsed url   slashes: null,
+37 verbose parsed url   auth: null,
+37 verbose parsed url   host: null,
+37 verbose parsed url   port: null,
+37 verbose parsed url   hostname: null,
+37 verbose parsed url   hash: null,
+37 verbose parsed url   search: null,
+37 verbose parsed url   query: null,
+37 verbose parsed url   pathname: 'grunt-contrib-connect@^0.9.0',
+37 verbose parsed url   path: 'grunt-contrib-connect@^0.9.0',
+37 verbose parsed url   href: 'grunt-contrib-connect@^0.9.0' }
+38 verbose cache add [ 'grunt-contrib-copy@^0.7.0', null ]
+39 verbose cache add name=undefined spec="grunt-contrib-copy@^0.7.0" args=["grunt-contrib-copy@^0.7.0",null]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: 'grunt-contrib-copy@^0.7.0',
+40 verbose parsed url   path: 'grunt-contrib-copy@^0.7.0',
+40 verbose parsed url   href: 'grunt-contrib-copy@^0.7.0' }
+41 verbose cache add [ 'grunt-contrib-cssmin@^1.0.2', null ]
+42 verbose cache add name=undefined spec="grunt-contrib-cssmin@^1.0.2" args=["grunt-contrib-cssmin@^1.0.2",null]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: 'grunt-contrib-cssmin@^1.0.2',
+43 verbose parsed url   path: 'grunt-contrib-cssmin@^1.0.2',
+43 verbose parsed url   href: 'grunt-contrib-cssmin@^1.0.2' }
+44 verbose cache add [ 'grunt-contrib-htmlmin@^0.4.0', null ]
+45 verbose cache add name=undefined spec="grunt-contrib-htmlmin@^0.4.0" args=["grunt-contrib-htmlmin@^0.4.0",null]
+46 verbose parsed url { protocol: null,
+46 verbose parsed url   slashes: null,
+46 verbose parsed url   auth: null,
+46 verbose parsed url   host: null,
+46 verbose parsed url   port: null,
+46 verbose parsed url   hostname: null,
+46 verbose parsed url   hash: null,
+46 verbose parsed url   search: null,
+46 verbose parsed url   query: null,
+46 verbose parsed url   pathname: 'grunt-contrib-htmlmin@^0.4.0',
+46 verbose parsed url   path: 'grunt-contrib-htmlmin@^0.4.0',
+46 verbose parsed url   href: 'grunt-contrib-htmlmin@^0.4.0' }
+47 verbose cache add [ 'grunt-contrib-imagemin@^1.0.0', null ]
+48 verbose cache add name=undefined spec="grunt-contrib-imagemin@^1.0.0" args=["grunt-contrib-imagemin@^1.0.0",null]
+49 verbose parsed url { protocol: null,
+49 verbose parsed url   slashes: null,
+49 verbose parsed url   auth: null,
+49 verbose parsed url   host: null,
+49 verbose parsed url   port: null,
+49 verbose parsed url   hostname: null,
+49 verbose parsed url   hash: null,
+49 verbose parsed url   search: null,
+49 verbose parsed url   query: null,
+49 verbose parsed url   pathname: 'grunt-contrib-imagemin@^1.0.0',
+49 verbose parsed url   path: 'grunt-contrib-imagemin@^1.0.0',
+49 verbose parsed url   href: 'grunt-contrib-imagemin@^1.0.0' }
+50 verbose cache add [ 'grunt-contrib-jshint@^0.11.0', null ]
+51 verbose cache add name=undefined spec="grunt-contrib-jshint@^0.11.0" args=["grunt-contrib-jshint@^0.11.0",null]
+52 verbose parsed url { protocol: null,
+52 verbose parsed url   slashes: null,
+52 verbose parsed url   auth: null,
+52 verbose parsed url   host: null,
+52 verbose parsed url   port: null,
+52 verbose parsed url   hostname: null,
+52 verbose parsed url   hash: null,
+52 verbose parsed url   search: null,
+52 verbose parsed url   query: null,
+52 verbose parsed url   pathname: 'grunt-contrib-jshint@^0.11.0',
+52 verbose parsed url   path: 'grunt-contrib-jshint@^0.11.0',
+52 verbose parsed url   href: 'grunt-contrib-jshint@^0.11.0' }
+53 verbose cache add [ 'grunt-contrib-uglify@^0.7.0', null ]
+54 verbose cache add name=undefined spec="grunt-contrib-uglify@^0.7.0" args=["grunt-contrib-uglify@^0.7.0",null]
+55 verbose parsed url { protocol: null,
+55 verbose parsed url   slashes: null,
+55 verbose parsed url   auth: null,
+55 verbose parsed url   host: null,
+55 verbose parsed url   port: null,
+55 verbose parsed url   hostname: null,
+55 verbose parsed url   hash: null,
+55 verbose parsed url   search: null,
+55 verbose parsed url   query: null,
+55 verbose parsed url   pathname: 'grunt-contrib-uglify@^0.7.0',
+55 verbose parsed url   path: 'grunt-contrib-uglify@^0.7.0',
+55 verbose parsed url   href: 'grunt-contrib-uglify@^0.7.0' }
+56 verbose cache add [ 'grunt-contrib-watch@^0.6.1', null ]
+57 verbose cache add name=undefined spec="grunt-contrib-watch@^0.6.1" args=["grunt-contrib-watch@^0.6.1",null]
+58 verbose parsed url { protocol: null,
+58 verbose parsed url   slashes: null,
+58 verbose parsed url   auth: null,
+58 verbose parsed url   host: null,
+58 verbose parsed url   port: null,
+58 verbose parsed url   hostname: null,
+58 verbose parsed url   hash: null,
+58 verbose parsed url   search: null,
+58 verbose parsed url   query: null,
+58 verbose parsed url   pathname: 'grunt-contrib-watch@^0.6.1',
+58 verbose parsed url   path: 'grunt-contrib-watch@^0.6.1',
+58 verbose parsed url   href: 'grunt-contrib-watch@^0.6.1' }
+59 verbose cache add name="express" spec="^4.15.2" args=["express","^4.15.2"]
+60 verbose parsed url { protocol: null,
+60 verbose parsed url   slashes: null,
+60 verbose parsed url   auth: null,
+60 verbose parsed url   host: null,
+60 verbose parsed url   port: null,
+60 verbose parsed url   hostname: null,
+60 verbose parsed url   hash: null,
+60 verbose parsed url   search: null,
+60 verbose parsed url   query: null,
+60 verbose parsed url   pathname: '^4.15.2',
+60 verbose parsed url   path: '^4.15.2',
+60 verbose parsed url   href: '^4.15.2' }
+61 verbose addNamed [ 'express', '^4.15.2' ]
+62 verbose addNamed [ null, '>=4.15.2-0 <5.0.0-0' ]
+63 verbose cache add name="gzippo" spec="^0.2.0" args=["gzippo","^0.2.0"]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: '^0.2.0',
+64 verbose parsed url   path: '^0.2.0',
+64 verbose parsed url   href: '^0.2.0' }
+65 verbose addNamed [ 'gzippo', '^0.2.0' ]
+66 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+67 verbose cache add name="morgan" spec="^1.8.1" args=["morgan","^1.8.1"]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: '^1.8.1',
+68 verbose parsed url   path: '^1.8.1',
+68 verbose parsed url   href: '^1.8.1' }
+69 verbose addNamed [ 'morgan', '^1.8.1' ]
+70 verbose addNamed [ null, '>=1.8.1-0 <2.0.0-0' ]
+71 verbose cache add name="autoprefixer-core" spec="^5.2.1" args=["autoprefixer-core","^5.2.1"]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: '^5.2.1',
+72 verbose parsed url   path: '^5.2.1',
+72 verbose parsed url   href: '^5.2.1' }
+73 verbose addNamed [ 'autoprefixer-core', '^5.2.1' ]
+74 verbose addNamed [ null, '>=5.2.1-0 <6.0.0-0' ]
+75 verbose cache add name="grunt" spec="^0.4.5" args=["grunt","^0.4.5"]
+76 verbose parsed url { protocol: null,
+76 verbose parsed url   slashes: null,
+76 verbose parsed url   auth: null,
+76 verbose parsed url   host: null,
+76 verbose parsed url   port: null,
+76 verbose parsed url   hostname: null,
+76 verbose parsed url   hash: null,
+76 verbose parsed url   search: null,
+76 verbose parsed url   query: null,
+76 verbose parsed url   pathname: '^0.4.5',
+76 verbose parsed url   path: '^0.4.5',
+76 verbose parsed url   href: '^0.4.5' }
+77 verbose addNamed [ 'grunt', '^0.4.5' ]
+78 verbose addNamed [ null, '>=0.4.5-0 <0.5.0-0' ]
+79 verbose cache add name="grunt-angular-templates" spec="^0.5.7" args=["grunt-angular-templates","^0.5.7"]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: '^0.5.7',
+80 verbose parsed url   path: '^0.5.7',
+80 verbose parsed url   href: '^0.5.7' }
+81 verbose addNamed [ 'grunt-angular-templates', '^0.5.7' ]
+82 verbose addNamed [ null, '>=0.5.7-0 <0.6.0-0' ]
+83 verbose cache add name="grunt-concurrent" spec="^1.0.0" args=["grunt-concurrent","^1.0.0"]
+84 verbose parsed url { protocol: null,
+84 verbose parsed url   slashes: null,
+84 verbose parsed url   auth: null,
+84 verbose parsed url   host: null,
+84 verbose parsed url   port: null,
+84 verbose parsed url   hostname: null,
+84 verbose parsed url   hash: null,
+84 verbose parsed url   search: null,
+84 verbose parsed url   query: null,
+84 verbose parsed url   pathname: '^1.0.0',
+84 verbose parsed url   path: '^1.0.0',
+84 verbose parsed url   href: '^1.0.0' }
+85 verbose addNamed [ 'grunt-concurrent', '^1.0.0' ]
+86 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+87 verbose cache add name="grunt-contrib-clean" spec="^0.6.0" args=["grunt-contrib-clean","^0.6.0"]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: '^0.6.0',
+88 verbose parsed url   path: '^0.6.0',
+88 verbose parsed url   href: '^0.6.0' }
+89 verbose addNamed [ 'grunt-contrib-clean', '^0.6.0' ]
+90 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+91 verbose cache add name="grunt-contrib-concat" spec="^0.5.0" args=["grunt-contrib-concat","^0.5.0"]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: '^0.5.0',
+92 verbose parsed url   path: '^0.5.0',
+92 verbose parsed url   href: '^0.5.0' }
+93 verbose addNamed [ 'grunt-contrib-concat', '^0.5.0' ]
+94 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+95 verbose cache add name="grunt-contrib-connect" spec="^0.9.0" args=["grunt-contrib-connect","^0.9.0"]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: '^0.9.0',
+96 verbose parsed url   path: '^0.9.0',
+96 verbose parsed url   href: '^0.9.0' }
+97 verbose addNamed [ 'grunt-contrib-connect', '^0.9.0' ]
+98 verbose addNamed [ null, '>=0.9.0-0 <0.10.0-0' ]
+99 verbose cache add name="grunt-contrib-copy" spec="^0.7.0" args=["grunt-contrib-copy","^0.7.0"]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: '^0.7.0',
+100 verbose parsed url   path: '^0.7.0',
+100 verbose parsed url   href: '^0.7.0' }
+101 verbose addNamed [ 'grunt-contrib-copy', '^0.7.0' ]
+102 verbose addNamed [ null, '>=0.7.0-0 <0.8.0-0' ]
+103 verbose cache add name="grunt-contrib-cssmin" spec="^1.0.2" args=["grunt-contrib-cssmin","^1.0.2"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '^1.0.2',
+104 verbose parsed url   path: '^1.0.2',
+104 verbose parsed url   href: '^1.0.2' }
+105 verbose addNamed [ 'grunt-contrib-cssmin', '^1.0.2' ]
+106 verbose addNamed [ null, '>=1.0.2-0 <2.0.0-0' ]
+107 verbose cache add name="grunt-contrib-htmlmin" spec="^0.4.0" args=["grunt-contrib-htmlmin","^0.4.0"]
+108 verbose parsed url { protocol: null,
+108 verbose parsed url   slashes: null,
+108 verbose parsed url   auth: null,
+108 verbose parsed url   host: null,
+108 verbose parsed url   port: null,
+108 verbose parsed url   hostname: null,
+108 verbose parsed url   hash: null,
+108 verbose parsed url   search: null,
+108 verbose parsed url   query: null,
+108 verbose parsed url   pathname: '^0.4.0',
+108 verbose parsed url   path: '^0.4.0',
+108 verbose parsed url   href: '^0.4.0' }
+109 verbose addNamed [ 'grunt-contrib-htmlmin', '^0.4.0' ]
+110 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+111 verbose cache add name="grunt-contrib-imagemin" spec="^1.0.0" args=["grunt-contrib-imagemin","^1.0.0"]
+112 verbose parsed url { protocol: null,
+112 verbose parsed url   slashes: null,
+112 verbose parsed url   auth: null,
+112 verbose parsed url   host: null,
+112 verbose parsed url   port: null,
+112 verbose parsed url   hostname: null,
+112 verbose parsed url   hash: null,
+112 verbose parsed url   search: null,
+112 verbose parsed url   query: null,
+112 verbose parsed url   pathname: '^1.0.0',
+112 verbose parsed url   path: '^1.0.0',
+112 verbose parsed url   href: '^1.0.0' }
+113 verbose addNamed [ 'grunt-contrib-imagemin', '^1.0.0' ]
+114 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+115 verbose cache add name="grunt-contrib-jshint" spec="^0.11.0" args=["grunt-contrib-jshint","^0.11.0"]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: '^0.11.0',
+116 verbose parsed url   path: '^0.11.0',
+116 verbose parsed url   href: '^0.11.0' }
+117 verbose addNamed [ 'grunt-contrib-jshint', '^0.11.0' ]
+118 verbose addNamed [ null, '>=0.11.0-0 <0.12.0-0' ]
+119 verbose cache add name="grunt-contrib-uglify" spec="^0.7.0" args=["grunt-contrib-uglify","^0.7.0"]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: '^0.7.0',
+120 verbose parsed url   path: '^0.7.0',
+120 verbose parsed url   href: '^0.7.0' }
+121 verbose addNamed [ 'grunt-contrib-uglify', '^0.7.0' ]
+122 verbose addNamed [ null, '>=0.7.0-0 <0.8.0-0' ]
+123 verbose cache add [ 'grunt-filerev@^2.1.2', null ]
+124 verbose cache add name=undefined spec="grunt-filerev@^2.1.2" args=["grunt-filerev@^2.1.2",null]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: 'grunt-filerev@^2.1.2',
+125 verbose parsed url   path: 'grunt-filerev@^2.1.2',
+125 verbose parsed url   href: 'grunt-filerev@^2.1.2' }
+126 verbose cache add [ 'grunt-google-cdn@^0.4.3', null ]
+127 verbose cache add name=undefined spec="grunt-google-cdn@^0.4.3" args=["grunt-google-cdn@^0.4.3",null]
+128 verbose parsed url { protocol: null,
+128 verbose parsed url   slashes: null,
+128 verbose parsed url   auth: null,
+128 verbose parsed url   host: null,
+128 verbose parsed url   port: null,
+128 verbose parsed url   hostname: null,
+128 verbose parsed url   hash: null,
+128 verbose parsed url   search: null,
+128 verbose parsed url   query: null,
+128 verbose parsed url   pathname: 'grunt-google-cdn@^0.4.3',
+128 verbose parsed url   path: 'grunt-google-cdn@^0.4.3',
+128 verbose parsed url   href: 'grunt-google-cdn@^0.4.3' }
+129 verbose cache add [ 'grunt-jscs@^1.8.0', null ]
+130 verbose cache add name=undefined spec="grunt-jscs@^1.8.0" args=["grunt-jscs@^1.8.0",null]
+131 verbose parsed url { protocol: null,
+131 verbose parsed url   slashes: null,
+131 verbose parsed url   auth: null,
+131 verbose parsed url   host: null,
+131 verbose parsed url   port: null,
+131 verbose parsed url   hostname: null,
+131 verbose parsed url   hash: null,
+131 verbose parsed url   search: null,
+131 verbose parsed url   query: null,
+131 verbose parsed url   pathname: 'grunt-jscs@^1.8.0',
+131 verbose parsed url   path: 'grunt-jscs@^1.8.0',
+131 verbose parsed url   href: 'grunt-jscs@^1.8.0' }
+132 verbose cache add [ 'grunt-newer@^1.1.0', null ]
+133 verbose cache add name=undefined spec="grunt-newer@^1.1.0" args=["grunt-newer@^1.1.0",null]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: 'grunt-newer@^1.1.0',
+134 verbose parsed url   path: 'grunt-newer@^1.1.0',
+134 verbose parsed url   href: 'grunt-newer@^1.1.0' }
+135 verbose cache add [ 'grunt-ng-annotate@^0.9.2', null ]
+136 verbose cache add name=undefined spec="grunt-ng-annotate@^0.9.2" args=["grunt-ng-annotate@^0.9.2",null]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: 'grunt-ng-annotate@^0.9.2',
+137 verbose parsed url   path: 'grunt-ng-annotate@^0.9.2',
+137 verbose parsed url   href: 'grunt-ng-annotate@^0.9.2' }
+138 verbose cache add [ 'grunt-postcss@^0.5.5', null ]
+139 verbose cache add name=undefined spec="grunt-postcss@^0.5.5" args=["grunt-postcss@^0.5.5",null]
+140 verbose parsed url { protocol: null,
+140 verbose parsed url   slashes: null,
+140 verbose parsed url   auth: null,
+140 verbose parsed url   host: null,
+140 verbose parsed url   port: null,
+140 verbose parsed url   hostname: null,
+140 verbose parsed url   hash: null,
+140 verbose parsed url   search: null,
+140 verbose parsed url   query: null,
+140 verbose parsed url   pathname: 'grunt-postcss@^0.5.5',
+140 verbose parsed url   path: 'grunt-postcss@^0.5.5',
+140 verbose parsed url   href: 'grunt-postcss@^0.5.5' }
+141 verbose cache add [ 'grunt-svgmin@^2.0.0', null ]
+142 verbose cache add name=undefined spec="grunt-svgmin@^2.0.0" args=["grunt-svgmin@^2.0.0",null]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: 'grunt-svgmin@^2.0.0',
+143 verbose parsed url   path: 'grunt-svgmin@^2.0.0',
+143 verbose parsed url   href: 'grunt-svgmin@^2.0.0' }
+144 verbose cache add [ 'grunt-usemin@^3.0.0', null ]
+145 verbose cache add name=undefined spec="grunt-usemin@^3.0.0" args=["grunt-usemin@^3.0.0",null]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: 'grunt-usemin@^3.0.0',
+146 verbose parsed url   path: 'grunt-usemin@^3.0.0',
+146 verbose parsed url   href: 'grunt-usemin@^3.0.0' }
+147 verbose cache add [ 'grunt-wiredep@^2.0.0', null ]
+148 verbose cache add name=undefined spec="grunt-wiredep@^2.0.0" args=["grunt-wiredep@^2.0.0",null]
+149 verbose parsed url { protocol: null,
+149 verbose parsed url   slashes: null,
+149 verbose parsed url   auth: null,
+149 verbose parsed url   host: null,
+149 verbose parsed url   port: null,
+149 verbose parsed url   hostname: null,
+149 verbose parsed url   hash: null,
+149 verbose parsed url   search: null,
+149 verbose parsed url   query: null,
+149 verbose parsed url   pathname: 'grunt-wiredep@^2.0.0',
+149 verbose parsed url   path: 'grunt-wiredep@^2.0.0',
+149 verbose parsed url   href: 'grunt-wiredep@^2.0.0' }
+150 verbose cache add [ 'jasmine-core@^2.5.2', null ]
+151 verbose cache add name=undefined spec="jasmine-core@^2.5.2" args=["jasmine-core@^2.5.2",null]
+152 verbose parsed url { protocol: null,
+152 verbose parsed url   slashes: null,
+152 verbose parsed url   auth: null,
+152 verbose parsed url   host: null,
+152 verbose parsed url   port: null,
+152 verbose parsed url   hostname: null,
+152 verbose parsed url   hash: null,
+152 verbose parsed url   search: null,
+152 verbose parsed url   query: null,
+152 verbose parsed url   pathname: 'jasmine-core@^2.5.2',
+152 verbose parsed url   path: 'jasmine-core@^2.5.2',
+152 verbose parsed url   href: 'jasmine-core@^2.5.2' }
+153 verbose cache add [ 'jit-grunt@^0.9.1', null ]
+154 verbose cache add name=undefined spec="jit-grunt@^0.9.1" args=["jit-grunt@^0.9.1",null]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: 'jit-grunt@^0.9.1',
+155 verbose parsed url   path: 'jit-grunt@^0.9.1',
+155 verbose parsed url   href: 'jit-grunt@^0.9.1' }
+156 verbose cache add [ 'jshint-stylish@^1.0.0', null ]
+157 verbose cache add name=undefined spec="jshint-stylish@^1.0.0" args=["jshint-stylish@^1.0.0",null]
+158 verbose parsed url { protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: 'jshint-stylish@^1.0.0',
+158 verbose parsed url   path: 'jshint-stylish@^1.0.0',
+158 verbose parsed url   href: 'jshint-stylish@^1.0.0' }
+159 verbose cache add [ 'karma@^1.5.0', null ]
+160 verbose cache add name=undefined spec="karma@^1.5.0" args=["karma@^1.5.0",null]
+161 verbose parsed url { protocol: null,
+161 verbose parsed url   slashes: null,
+161 verbose parsed url   auth: null,
+161 verbose parsed url   host: null,
+161 verbose parsed url   port: null,
+161 verbose parsed url   hostname: null,
+161 verbose parsed url   hash: null,
+161 verbose parsed url   search: null,
+161 verbose parsed url   query: null,
+161 verbose parsed url   pathname: 'karma@^1.5.0',
+161 verbose parsed url   path: 'karma@^1.5.0',
+161 verbose parsed url   href: 'karma@^1.5.0' }
+162 verbose cache add [ 'karma-jasmine@^1.1.0', null ]
+163 verbose cache add name=undefined spec="karma-jasmine@^1.1.0" args=["karma-jasmine@^1.1.0",null]
+164 verbose parsed url { protocol: null,
+164 verbose parsed url   slashes: null,
+164 verbose parsed url   auth: null,
+164 verbose parsed url   host: null,
+164 verbose parsed url   port: null,
+164 verbose parsed url   hostname: null,
+164 verbose parsed url   hash: null,
+164 verbose parsed url   search: null,
+164 verbose parsed url   query: null,
+164 verbose parsed url   pathname: 'karma-jasmine@^1.1.0',
+164 verbose parsed url   path: 'karma-jasmine@^1.1.0',
+164 verbose parsed url   href: 'karma-jasmine@^1.1.0' }
+165 verbose cache add [ 'karma-phantomjs-launcher@^1.0.4', null ]
+166 verbose cache add name=undefined spec="karma-phantomjs-launcher@^1.0.4" args=["karma-phantomjs-launcher@^1.0.4",null]
+167 verbose parsed url { protocol: null,
+167 verbose parsed url   slashes: null,
+167 verbose parsed url   auth: null,
+167 verbose parsed url   host: null,
+167 verbose parsed url   port: null,
+167 verbose parsed url   hostname: null,
+167 verbose parsed url   hash: null,
+167 verbose parsed url   search: null,
+167 verbose parsed url   query: null,
+167 verbose parsed url   pathname: 'karma-phantomjs-launcher@^1.0.4',
+167 verbose parsed url   path: 'karma-phantomjs-launcher@^1.0.4',
+167 verbose parsed url   href: 'karma-phantomjs-launcher@^1.0.4' }
+168 verbose cache add [ 'phantomjs-prebuilt@^2.1.14', null ]
+169 verbose cache add name=undefined spec="phantomjs-prebuilt@^2.1.14" args=["phantomjs-prebuilt@^2.1.14",null]
+170 verbose parsed url { protocol: null,
+170 verbose parsed url   slashes: null,
+170 verbose parsed url   auth: null,
+170 verbose parsed url   host: null,
+170 verbose parsed url   port: null,
+170 verbose parsed url   hostname: null,
+170 verbose parsed url   hash: null,
+170 verbose parsed url   search: null,
+170 verbose parsed url   query: null,
+170 verbose parsed url   pathname: 'phantomjs-prebuilt@^2.1.14',
+170 verbose parsed url   path: 'phantomjs-prebuilt@^2.1.14',
+170 verbose parsed url   href: 'phantomjs-prebuilt@^2.1.14' }
+171 verbose cache add name="grunt-contrib-watch" spec="^0.6.1" args=["grunt-contrib-watch","^0.6.1"]
+172 verbose parsed url { protocol: null,
+172 verbose parsed url   slashes: null,
+172 verbose parsed url   auth: null,
+172 verbose parsed url   host: null,
+172 verbose parsed url   port: null,
+172 verbose parsed url   hostname: null,
+172 verbose parsed url   hash: null,
+172 verbose parsed url   search: null,
+172 verbose parsed url   query: null,
+172 verbose parsed url   pathname: '^0.6.1',
+172 verbose parsed url   path: '^0.6.1',
+172 verbose parsed url   href: '^0.6.1' }
+173 verbose addNamed [ 'grunt-contrib-watch', '^0.6.1' ]
+174 verbose addNamed [ null, '>=0.6.1-0 <0.7.0-0' ]
+175 silly lockFile 3f024a3c-express-4-15-2 express@^4.15.2
+176 verbose lock express@^4.15.2 C:\Users\z821366\AppData\Roaming\npm-cache\3f024a3c-express-4-15-2.lock
+177 silly lockFile 70ef5c73-gzippo-0-2-0 gzippo@^0.2.0
+178 verbose lock gzippo@^0.2.0 C:\Users\z821366\AppData\Roaming\npm-cache\70ef5c73-gzippo-0-2-0.lock
+179 silly lockFile 157ff666-morgan-1-8-1 morgan@^1.8.1
+180 verbose lock morgan@^1.8.1 C:\Users\z821366\AppData\Roaming\npm-cache\157ff666-morgan-1-8-1.lock
+181 silly lockFile 9fe93f56-autoprefixer-core-5-2-1 autoprefixer-core@^5.2.1
+182 verbose lock autoprefixer-core@^5.2.1 C:\Users\z821366\AppData\Roaming\npm-cache\9fe93f56-autoprefixer-core-5-2-1.lock
+183 silly lockFile 73541f84-grunt-0-4-5 grunt@^0.4.5
+184 verbose lock grunt@^0.4.5 C:\Users\z821366\AppData\Roaming\npm-cache\73541f84-grunt-0-4-5.lock
+185 silly lockFile 8cd44080-grunt-angular-templates-0-5-7 grunt-angular-templates@^0.5.7
+186 verbose lock grunt-angular-templates@^0.5.7 C:\Users\z821366\AppData\Roaming\npm-cache\8cd44080-grunt-angular-templates-0-5-7.lock
+187 silly lockFile e5d6a4fb-grunt-concurrent-1-0-0 grunt-concurrent@^1.0.0
+188 verbose lock grunt-concurrent@^1.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\e5d6a4fb-grunt-concurrent-1-0-0.lock
+189 silly lockFile ca39a60f-grunt-contrib-clean-0-6-0 grunt-contrib-clean@^0.6.0
+190 verbose lock grunt-contrib-clean@^0.6.0 C:\Users\z821366\AppData\Roaming\npm-cache\ca39a60f-grunt-contrib-clean-0-6-0.lock
+191 silly lockFile 47c410cb-grunt-contrib-concat-0-5-0 grunt-contrib-concat@^0.5.0
+192 verbose lock grunt-contrib-concat@^0.5.0 C:\Users\z821366\AppData\Roaming\npm-cache\47c410cb-grunt-contrib-concat-0-5-0.lock
+193 silly lockFile 8990ac20-grunt-contrib-connect-0-9-0 grunt-contrib-connect@^0.9.0
+194 verbose lock grunt-contrib-connect@^0.9.0 C:\Users\z821366\AppData\Roaming\npm-cache\8990ac20-grunt-contrib-connect-0-9-0.lock
+195 silly lockFile 359d66a1-grunt-contrib-copy-0-7-0 grunt-contrib-copy@^0.7.0
+196 verbose lock grunt-contrib-copy@^0.7.0 C:\Users\z821366\AppData\Roaming\npm-cache\359d66a1-grunt-contrib-copy-0-7-0.lock
+197 silly lockFile 039fa302-grunt-contrib-cssmin-1-0-2 grunt-contrib-cssmin@^1.0.2
+198 verbose lock grunt-contrib-cssmin@^1.0.2 C:\Users\z821366\AppData\Roaming\npm-cache\039fa302-grunt-contrib-cssmin-1-0-2.lock
+199 silly lockFile 125176d8-grunt-contrib-htmlmin-0-4-0 grunt-contrib-htmlmin@^0.4.0
+200 verbose lock grunt-contrib-htmlmin@^0.4.0 C:\Users\z821366\AppData\Roaming\npm-cache\125176d8-grunt-contrib-htmlmin-0-4-0.lock
+201 silly lockFile de105161-grunt-contrib-imagemin-1-0-0 grunt-contrib-imagemin@^1.0.0
+202 verbose lock grunt-contrib-imagemin@^1.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\de105161-grunt-contrib-imagemin-1-0-0.lock
+203 silly lockFile 5782cb4c-grunt-contrib-jshint-0-11-0 grunt-contrib-jshint@^0.11.0
+204 verbose lock grunt-contrib-jshint@^0.11.0 C:\Users\z821366\AppData\Roaming\npm-cache\5782cb4c-grunt-contrib-jshint-0-11-0.lock
+205 silly lockFile 305ef1bc-grunt-contrib-uglify-0-7-0 grunt-contrib-uglify@^0.7.0
+206 verbose lock grunt-contrib-uglify@^0.7.0 C:\Users\z821366\AppData\Roaming\npm-cache\305ef1bc-grunt-contrib-uglify-0-7-0.lock
+207 silly lockFile 224b1ece-grunt-contrib-watch-0-6-1 grunt-contrib-watch@^0.6.1
+208 verbose lock grunt-contrib-watch@^0.6.1 C:\Users\z821366\AppData\Roaming\npm-cache\224b1ece-grunt-contrib-watch-0-6-1.lock
+209 verbose cache add name="grunt-filerev" spec="^2.1.2" args=["grunt-filerev","^2.1.2"]
+210 verbose parsed url { protocol: null,
+210 verbose parsed url   slashes: null,
+210 verbose parsed url   auth: null,
+210 verbose parsed url   host: null,
+210 verbose parsed url   port: null,
+210 verbose parsed url   hostname: null,
+210 verbose parsed url   hash: null,
+210 verbose parsed url   search: null,
+210 verbose parsed url   query: null,
+210 verbose parsed url   pathname: '^2.1.2',
+210 verbose parsed url   path: '^2.1.2',
+210 verbose parsed url   href: '^2.1.2' }
+211 verbose addNamed [ 'grunt-filerev', '^2.1.2' ]
+212 verbose addNamed [ null, '>=2.1.2-0 <3.0.0-0' ]
+213 silly lockFile c590b3c8-grunt-filerev-2-1-2 grunt-filerev@^2.1.2
+214 verbose lock grunt-filerev@^2.1.2 C:\Users\z821366\AppData\Roaming\npm-cache\c590b3c8-grunt-filerev-2-1-2.lock
+215 verbose cache add name="grunt-google-cdn" spec="^0.4.3" args=["grunt-google-cdn","^0.4.3"]
+216 verbose parsed url { protocol: null,
+216 verbose parsed url   slashes: null,
+216 verbose parsed url   auth: null,
+216 verbose parsed url   host: null,
+216 verbose parsed url   port: null,
+216 verbose parsed url   hostname: null,
+216 verbose parsed url   hash: null,
+216 verbose parsed url   search: null,
+216 verbose parsed url   query: null,
+216 verbose parsed url   pathname: '^0.4.3',
+216 verbose parsed url   path: '^0.4.3',
+216 verbose parsed url   href: '^0.4.3' }
+217 verbose addNamed [ 'grunt-google-cdn', '^0.4.3' ]
+218 verbose addNamed [ null, '>=0.4.3-0 <0.5.0-0' ]
+219 silly lockFile 99bf181c-grunt-google-cdn-0-4-3 grunt-google-cdn@^0.4.3
+220 verbose lock grunt-google-cdn@^0.4.3 C:\Users\z821366\AppData\Roaming\npm-cache\99bf181c-grunt-google-cdn-0-4-3.lock
+221 verbose cache add name="grunt-jscs" spec="^1.8.0" args=["grunt-jscs","^1.8.0"]
+222 verbose parsed url { protocol: null,
+222 verbose parsed url   slashes: null,
+222 verbose parsed url   auth: null,
+222 verbose parsed url   host: null,
+222 verbose parsed url   port: null,
+222 verbose parsed url   hostname: null,
+222 verbose parsed url   hash: null,
+222 verbose parsed url   search: null,
+222 verbose parsed url   query: null,
+222 verbose parsed url   pathname: '^1.8.0',
+222 verbose parsed url   path: '^1.8.0',
+222 verbose parsed url   href: '^1.8.0' }
+223 verbose addNamed [ 'grunt-jscs', '^1.8.0' ]
+224 verbose addNamed [ null, '>=1.8.0-0 <2.0.0-0' ]
+225 silly lockFile 57eb76fd-grunt-jscs-1-8-0 grunt-jscs@^1.8.0
+226 verbose lock grunt-jscs@^1.8.0 C:\Users\z821366\AppData\Roaming\npm-cache\57eb76fd-grunt-jscs-1-8-0.lock
+227 verbose cache add name="grunt-newer" spec="^1.1.0" args=["grunt-newer","^1.1.0"]
+228 verbose parsed url { protocol: null,
+228 verbose parsed url   slashes: null,
+228 verbose parsed url   auth: null,
+228 verbose parsed url   host: null,
+228 verbose parsed url   port: null,
+228 verbose parsed url   hostname: null,
+228 verbose parsed url   hash: null,
+228 verbose parsed url   search: null,
+228 verbose parsed url   query: null,
+228 verbose parsed url   pathname: '^1.1.0',
+228 verbose parsed url   path: '^1.1.0',
+228 verbose parsed url   href: '^1.1.0' }
+229 verbose addNamed [ 'grunt-newer', '^1.1.0' ]
+230 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+231 silly lockFile 333fcb72-grunt-newer-1-1-0 grunt-newer@^1.1.0
+232 verbose lock grunt-newer@^1.1.0 C:\Users\z821366\AppData\Roaming\npm-cache\333fcb72-grunt-newer-1-1-0.lock
+233 verbose cache add name="grunt-ng-annotate" spec="^0.9.2" args=["grunt-ng-annotate","^0.9.2"]
+234 verbose parsed url { protocol: null,
+234 verbose parsed url   slashes: null,
+234 verbose parsed url   auth: null,
+234 verbose parsed url   host: null,
+234 verbose parsed url   port: null,
+234 verbose parsed url   hostname: null,
+234 verbose parsed url   hash: null,
+234 verbose parsed url   search: null,
+234 verbose parsed url   query: null,
+234 verbose parsed url   pathname: '^0.9.2',
+234 verbose parsed url   path: '^0.9.2',
+234 verbose parsed url   href: '^0.9.2' }
+235 verbose addNamed [ 'grunt-ng-annotate', '^0.9.2' ]
+236 verbose addNamed [ null, '>=0.9.2-0 <0.10.0-0' ]
+237 silly lockFile 324c6ebb-grunt-ng-annotate-0-9-2 grunt-ng-annotate@^0.9.2
+238 verbose lock grunt-ng-annotate@^0.9.2 C:\Users\z821366\AppData\Roaming\npm-cache\324c6ebb-grunt-ng-annotate-0-9-2.lock
+239 verbose cache add name="grunt-postcss" spec="^0.5.5" args=["grunt-postcss","^0.5.5"]
+240 verbose parsed url { protocol: null,
+240 verbose parsed url   slashes: null,
+240 verbose parsed url   auth: null,
+240 verbose parsed url   host: null,
+240 verbose parsed url   port: null,
+240 verbose parsed url   hostname: null,
+240 verbose parsed url   hash: null,
+240 verbose parsed url   search: null,
+240 verbose parsed url   query: null,
+240 verbose parsed url   pathname: '^0.5.5',
+240 verbose parsed url   path: '^0.5.5',
+240 verbose parsed url   href: '^0.5.5' }
+241 verbose addNamed [ 'grunt-postcss', '^0.5.5' ]
+242 verbose addNamed [ null, '>=0.5.5-0 <0.6.0-0' ]
+243 silly lockFile 90253a49-grunt-postcss-0-5-5 grunt-postcss@^0.5.5
+244 verbose lock grunt-postcss@^0.5.5 C:\Users\z821366\AppData\Roaming\npm-cache\90253a49-grunt-postcss-0-5-5.lock
+245 verbose cache add name="grunt-svgmin" spec="^2.0.0" args=["grunt-svgmin","^2.0.0"]
+246 verbose parsed url { protocol: null,
+246 verbose parsed url   slashes: null,
+246 verbose parsed url   auth: null,
+246 verbose parsed url   host: null,
+246 verbose parsed url   port: null,
+246 verbose parsed url   hostname: null,
+246 verbose parsed url   hash: null,
+246 verbose parsed url   search: null,
+246 verbose parsed url   query: null,
+246 verbose parsed url   pathname: '^2.0.0',
+246 verbose parsed url   path: '^2.0.0',
+246 verbose parsed url   href: '^2.0.0' }
+247 verbose addNamed [ 'grunt-svgmin', '^2.0.0' ]
+248 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+249 silly lockFile 14706f94-grunt-svgmin-2-0-0 grunt-svgmin@^2.0.0
+250 verbose lock grunt-svgmin@^2.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\14706f94-grunt-svgmin-2-0-0.lock
+251 verbose cache add name="grunt-usemin" spec="^3.0.0" args=["grunt-usemin","^3.0.0"]
+252 verbose parsed url { protocol: null,
+252 verbose parsed url   slashes: null,
+252 verbose parsed url   auth: null,
+252 verbose parsed url   host: null,
+252 verbose parsed url   port: null,
+252 verbose parsed url   hostname: null,
+252 verbose parsed url   hash: null,
+252 verbose parsed url   search: null,
+252 verbose parsed url   query: null,
+252 verbose parsed url   pathname: '^3.0.0',
+252 verbose parsed url   path: '^3.0.0',
+252 verbose parsed url   href: '^3.0.0' }
+253 verbose addNamed [ 'grunt-usemin', '^3.0.0' ]
+254 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+255 silly lockFile 5cb00507-grunt-usemin-3-0-0 grunt-usemin@^3.0.0
+256 verbose lock grunt-usemin@^3.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\5cb00507-grunt-usemin-3-0-0.lock
+257 verbose cache add name="grunt-wiredep" spec="^2.0.0" args=["grunt-wiredep","^2.0.0"]
+258 verbose parsed url { protocol: null,
+258 verbose parsed url   slashes: null,
+258 verbose parsed url   auth: null,
+258 verbose parsed url   host: null,
+258 verbose parsed url   port: null,
+258 verbose parsed url   hostname: null,
+258 verbose parsed url   hash: null,
+258 verbose parsed url   search: null,
+258 verbose parsed url   query: null,
+258 verbose parsed url   pathname: '^2.0.0',
+258 verbose parsed url   path: '^2.0.0',
+258 verbose parsed url   href: '^2.0.0' }
+259 verbose addNamed [ 'grunt-wiredep', '^2.0.0' ]
+260 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+261 silly lockFile fa324219-grunt-wiredep-2-0-0 grunt-wiredep@^2.0.0
+262 verbose lock grunt-wiredep@^2.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\fa324219-grunt-wiredep-2-0-0.lock
+263 verbose cache add name="jasmine-core" spec="^2.5.2" args=["jasmine-core","^2.5.2"]
+264 verbose parsed url { protocol: null,
+264 verbose parsed url   slashes: null,
+264 verbose parsed url   auth: null,
+264 verbose parsed url   host: null,
+264 verbose parsed url   port: null,
+264 verbose parsed url   hostname: null,
+264 verbose parsed url   hash: null,
+264 verbose parsed url   search: null,
+264 verbose parsed url   query: null,
+264 verbose parsed url   pathname: '^2.5.2',
+264 verbose parsed url   path: '^2.5.2',
+264 verbose parsed url   href: '^2.5.2' }
+265 verbose addNamed [ 'jasmine-core', '^2.5.2' ]
+266 verbose addNamed [ null, '>=2.5.2-0 <3.0.0-0' ]
+267 silly lockFile 7471459e-jasmine-core-2-5-2 jasmine-core@^2.5.2
+268 verbose lock jasmine-core@^2.5.2 C:\Users\z821366\AppData\Roaming\npm-cache\7471459e-jasmine-core-2-5-2.lock
+269 verbose cache add name="jit-grunt" spec="^0.9.1" args=["jit-grunt","^0.9.1"]
+270 verbose parsed url { protocol: null,
+270 verbose parsed url   slashes: null,
+270 verbose parsed url   auth: null,
+270 verbose parsed url   host: null,
+270 verbose parsed url   port: null,
+270 verbose parsed url   hostname: null,
+270 verbose parsed url   hash: null,
+270 verbose parsed url   search: null,
+270 verbose parsed url   query: null,
+270 verbose parsed url   pathname: '^0.9.1',
+270 verbose parsed url   path: '^0.9.1',
+270 verbose parsed url   href: '^0.9.1' }
+271 verbose addNamed [ 'jit-grunt', '^0.9.1' ]
+272 verbose addNamed [ null, '>=0.9.1-0 <0.10.0-0' ]
+273 silly lockFile 9b4591b4-jit-grunt-0-9-1 jit-grunt@^0.9.1
+274 verbose lock jit-grunt@^0.9.1 C:\Users\z821366\AppData\Roaming\npm-cache\9b4591b4-jit-grunt-0-9-1.lock
+275 verbose cache add name="jshint-stylish" spec="^1.0.0" args=["jshint-stylish","^1.0.0"]
+276 verbose parsed url { protocol: null,
+276 verbose parsed url   slashes: null,
+276 verbose parsed url   auth: null,
+276 verbose parsed url   host: null,
+276 verbose parsed url   port: null,
+276 verbose parsed url   hostname: null,
+276 verbose parsed url   hash: null,
+276 verbose parsed url   search: null,
+276 verbose parsed url   query: null,
+276 verbose parsed url   pathname: '^1.0.0',
+276 verbose parsed url   path: '^1.0.0',
+276 verbose parsed url   href: '^1.0.0' }
+277 verbose addNamed [ 'jshint-stylish', '^1.0.0' ]
+278 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+279 silly lockFile 522e2e8d-jshint-stylish-1-0-0 jshint-stylish@^1.0.0
+280 verbose lock jshint-stylish@^1.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\522e2e8d-jshint-stylish-1-0-0.lock
+281 verbose cache add name="karma" spec="^1.5.0" args=["karma","^1.5.0"]
+282 verbose parsed url { protocol: null,
+282 verbose parsed url   slashes: null,
+282 verbose parsed url   auth: null,
+282 verbose parsed url   host: null,
+282 verbose parsed url   port: null,
+282 verbose parsed url   hostname: null,
+282 verbose parsed url   hash: null,
+282 verbose parsed url   search: null,
+282 verbose parsed url   query: null,
+282 verbose parsed url   pathname: '^1.5.0',
+282 verbose parsed url   path: '^1.5.0',
+282 verbose parsed url   href: '^1.5.0' }
+283 verbose addNamed [ 'karma', '^1.5.0' ]
+284 verbose addNamed [ null, '>=1.5.0-0 <2.0.0-0' ]
+285 silly lockFile 1440f3a2-karma-1-5-0 karma@^1.5.0
+286 verbose lock karma@^1.5.0 C:\Users\z821366\AppData\Roaming\npm-cache\1440f3a2-karma-1-5-0.lock
+287 verbose cache add name="karma-jasmine" spec="^1.1.0" args=["karma-jasmine","^1.1.0"]
+288 verbose parsed url { protocol: null,
+288 verbose parsed url   slashes: null,
+288 verbose parsed url   auth: null,
+288 verbose parsed url   host: null,
+288 verbose parsed url   port: null,
+288 verbose parsed url   hostname: null,
+288 verbose parsed url   hash: null,
+288 verbose parsed url   search: null,
+288 verbose parsed url   query: null,
+288 verbose parsed url   pathname: '^1.1.0',
+288 verbose parsed url   path: '^1.1.0',
+288 verbose parsed url   href: '^1.1.0' }
+289 verbose addNamed [ 'karma-jasmine', '^1.1.0' ]
+290 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+291 silly lockFile 5e9d6320-karma-jasmine-1-1-0 karma-jasmine@^1.1.0
+292 verbose lock karma-jasmine@^1.1.0 C:\Users\z821366\AppData\Roaming\npm-cache\5e9d6320-karma-jasmine-1-1-0.lock
+293 verbose cache add name="karma-phantomjs-launcher" spec="^1.0.4" args=["karma-phantomjs-launcher","^1.0.4"]
+294 verbose parsed url { protocol: null,
+294 verbose parsed url   slashes: null,
+294 verbose parsed url   auth: null,
+294 verbose parsed url   host: null,
+294 verbose parsed url   port: null,
+294 verbose parsed url   hostname: null,
+294 verbose parsed url   hash: null,
+294 verbose parsed url   search: null,
+294 verbose parsed url   query: null,
+294 verbose parsed url   pathname: '^1.0.4',
+294 verbose parsed url   path: '^1.0.4',
+294 verbose parsed url   href: '^1.0.4' }
+295 verbose addNamed [ 'karma-phantomjs-launcher', '^1.0.4' ]
+296 verbose addNamed [ null, '>=1.0.4-0 <2.0.0-0' ]
+297 silly lockFile aa9e392f-karma-phantomjs-launcher-1-0-4 karma-phantomjs-launcher@^1.0.4
+298 verbose lock karma-phantomjs-launcher@^1.0.4 C:\Users\z821366\AppData\Roaming\npm-cache\aa9e392f-karma-phantomjs-launcher-1-0-4.lock
+299 verbose cache add name="phantomjs-prebuilt" spec="^2.1.14" args=["phantomjs-prebuilt","^2.1.14"]
+300 verbose parsed url { protocol: null,
+300 verbose parsed url   slashes: null,
+300 verbose parsed url   auth: null,
+300 verbose parsed url   host: null,
+300 verbose parsed url   port: null,
+300 verbose parsed url   hostname: null,
+300 verbose parsed url   hash: null,
+300 verbose parsed url   search: null,
+300 verbose parsed url   query: null,
+300 verbose parsed url   pathname: '^2.1.14',
+300 verbose parsed url   path: '^2.1.14',
+300 verbose parsed url   href: '^2.1.14' }
+301 verbose addNamed [ 'phantomjs-prebuilt', '^2.1.14' ]
+302 verbose addNamed [ null, '>=2.1.14-0 <3.0.0-0' ]
+303 silly lockFile 2da57e9e-phantomjs-prebuilt-2-1-14 phantomjs-prebuilt@^2.1.14
+304 verbose lock phantomjs-prebuilt@^2.1.14 C:\Users\z821366\AppData\Roaming\npm-cache\2da57e9e-phantomjs-prebuilt-2-1-14.lock
+305 verbose cache add [ 'time-grunt@^1.0.0', null ]
+306 verbose cache add name=undefined spec="time-grunt@^1.0.0" args=["time-grunt@^1.0.0",null]
+307 verbose parsed url { protocol: null,
+307 verbose parsed url   slashes: null,
+307 verbose parsed url   auth: null,
+307 verbose parsed url   host: null,
+307 verbose parsed url   port: null,
+307 verbose parsed url   hostname: null,
+307 verbose parsed url   hash: null,
+307 verbose parsed url   search: null,
+307 verbose parsed url   query: null,
+307 verbose parsed url   pathname: 'time-grunt@^1.0.0',
+307 verbose parsed url   path: 'time-grunt@^1.0.0',
+307 verbose parsed url   href: 'time-grunt@^1.0.0' }
+308 verbose cache add name="time-grunt" spec="^1.0.0" args=["time-grunt","^1.0.0"]
+309 verbose parsed url { protocol: null,
+309 verbose parsed url   slashes: null,
+309 verbose parsed url   auth: null,
+309 verbose parsed url   host: null,
+309 verbose parsed url   port: null,
+309 verbose parsed url   hostname: null,
+309 verbose parsed url   hash: null,
+309 verbose parsed url   search: null,
+309 verbose parsed url   query: null,
+309 verbose parsed url   pathname: '^1.0.0',
+309 verbose parsed url   path: '^1.0.0',
+309 verbose parsed url   href: '^1.0.0' }
+310 verbose addNamed [ 'time-grunt', '^1.0.0' ]
+311 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+312 silly lockFile 5ddae01b-time-grunt-1-0-0 time-grunt@^1.0.0
+313 verbose lock time-grunt@^1.0.0 C:\Users\z821366\AppData\Roaming\npm-cache\5ddae01b-time-grunt-1-0-0.lock
+314 silly addNameRange { name: 'gzippo', range: '>=0.2.0-0 <0.3.0-0', hasData: false }
+315 silly addNameRange { name: 'grunt-concurrent',
+315 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+315 silly addNameRange   hasData: false }
+316 silly addNameRange { name: 'grunt', range: '>=0.4.5-0 <0.5.0-0', hasData: false }
+317 silly addNameRange { name: 'grunt-contrib-clean',
+317 silly addNameRange   range: '>=0.6.0-0 <0.7.0-0',
+317 silly addNameRange   hasData: false }
+318 silly addNameRange { name: 'grunt-angular-templates',
+318 silly addNameRange   range: '>=0.5.7-0 <0.6.0-0',
+318 silly addNameRange   hasData: false }
+319 verbose request where is /artifactory/api/npm/npm-virtual/gzippo
+320 verbose request registry https://oneartifactory.verizon.com/
+321 verbose request id 2b097576b753a657
+322 verbose url raw /artifactory/api/npm/npm-virtual/gzippo
+323 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+323 verbose url resolving   './artifactory/api/npm/npm-virtual/gzippo' ]
+324 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/gzippo
+325 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/gzippo
+326 info trying registry request attempt 1 at 16:22:50
+327 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/gzippo
+328 verbose request where is /artifactory/api/npm/npm-virtual/grunt-concurrent
+329 verbose request registry https://oneartifactory.verizon.com/
+330 verbose url raw /artifactory/api/npm/npm-virtual/grunt-concurrent
+331 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+331 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-concurrent' ]
+332 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-concurrent
+333 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-concurrent
+334 info trying registry request attempt 1 at 16:22:50
+335 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-concurrent
+336 verbose request where is /artifactory/api/npm/npm-virtual/grunt
+337 verbose request registry https://oneartifactory.verizon.com/
+338 verbose url raw /artifactory/api/npm/npm-virtual/grunt
+339 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+339 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt' ]
+340 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt
+341 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt
+342 info trying registry request attempt 1 at 16:22:50
+343 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt
+344 silly addNameRange { name: 'grunt-contrib-concat',
+344 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+344 silly addNameRange   hasData: false }
+345 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-clean
+346 verbose request registry https://oneartifactory.verizon.com/
+347 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-clean
+348 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+348 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-clean' ]
+349 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-clean
+350 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-clean
+351 info trying registry request attempt 1 at 16:22:50
+352 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-clean
+353 verbose request where is /artifactory/api/npm/npm-virtual/grunt-angular-templates
+354 verbose request registry https://oneartifactory.verizon.com/
+355 verbose url raw /artifactory/api/npm/npm-virtual/grunt-angular-templates
+356 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+356 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-angular-templates' ]
+357 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-angular-templates
+358 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-angular-templates
+359 info trying registry request attempt 1 at 16:22:50
+360 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-angular-templates
+361 silly addNameRange { name: 'grunt-contrib-cssmin',
+361 silly addNameRange   range: '>=1.0.2-0 <2.0.0-0',
+361 silly addNameRange   hasData: false }
+362 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-concat
+363 verbose request registry https://oneartifactory.verizon.com/
+364 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-concat
+365 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+365 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-concat' ]
+366 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-concat
+367 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-concat
+368 info trying registry request attempt 1 at 16:22:50
+369 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-concat
+370 silly addNameRange { name: 'grunt-contrib-imagemin',
+370 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+370 silly addNameRange   hasData: false }
+371 silly addNameRange { name: 'grunt-contrib-htmlmin',
+371 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+371 silly addNameRange   hasData: false }
+372 silly addNameRange { name: 'grunt-contrib-connect',
+372 silly addNameRange   range: '>=0.9.0-0 <0.10.0-0',
+372 silly addNameRange   hasData: false }
+373 silly addNameRange { name: 'grunt-usemin',
+373 silly addNameRange   range: '>=3.0.0-0 <4.0.0-0',
+373 silly addNameRange   hasData: false }
+374 silly addNameRange { name: 'grunt-contrib-copy',
+374 silly addNameRange   range: '>=0.7.0-0 <0.8.0-0',
+374 silly addNameRange   hasData: false }
+375 silly addNameRange { name: 'grunt-newer',
+375 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+375 silly addNameRange   hasData: false }
+376 silly addNameRange { name: 'grunt-svgmin',
+376 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+376 silly addNameRange   hasData: false }
+377 silly addNameRange { name: 'grunt-postcss',
+377 silly addNameRange   range: '>=0.5.5-0 <0.6.0-0',
+377 silly addNameRange   hasData: false }
+378 silly addNameRange { name: 'express', range: '>=4.15.2-0 <5.0.0-0', hasData: false }
+379 silly addNameRange { name: 'morgan', range: '>=1.8.1-0 <2.0.0-0', hasData: false }
+380 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+381 verbose request registry https://oneartifactory.verizon.com/
+382 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+383 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+383 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-cssmin' ]
+384 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+385 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+386 info trying registry request attempt 1 at 16:22:50
+387 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+388 silly addNameRange { name: 'grunt-contrib-jshint',
+388 silly addNameRange   range: '>=0.11.0-0 <0.12.0-0',
+388 silly addNameRange   hasData: false }
+389 silly addNameRange { name: 'grunt-filerev',
+389 silly addNameRange   range: '>=2.1.2-0 <3.0.0-0',
+389 silly addNameRange   hasData: false }
+390 silly addNameRange { name: 'grunt-wiredep',
+390 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+390 silly addNameRange   hasData: false }
+391 silly addNameRange { name: 'grunt-contrib-uglify',
+391 silly addNameRange   range: '>=0.7.0-0 <0.8.0-0',
+391 silly addNameRange   hasData: false }
+392 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+393 verbose request registry https://oneartifactory.verizon.com/
+394 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+395 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+395 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-imagemin' ]
+396 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+397 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+398 info trying registry request attempt 1 at 16:22:50
+399 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+400 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+401 verbose request registry https://oneartifactory.verizon.com/
+402 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+403 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+403 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin' ]
+404 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+405 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+406 info trying registry request attempt 1 at 16:22:50
+407 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+408 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-connect
+409 verbose request registry https://oneartifactory.verizon.com/
+410 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-connect
+411 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+411 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-connect' ]
+412 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-connect
+413 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-connect
+414 info trying registry request attempt 1 at 16:22:50
+415 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-connect
+416 verbose request where is /artifactory/api/npm/npm-virtual/grunt-usemin
+417 verbose request registry https://oneartifactory.verizon.com/
+418 verbose url raw /artifactory/api/npm/npm-virtual/grunt-usemin
+419 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+419 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-usemin' ]
+420 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-usemin
+421 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-usemin
+422 info trying registry request attempt 1 at 16:22:50
+423 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-usemin
+424 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-copy
+425 verbose request registry https://oneartifactory.verizon.com/
+426 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-copy
+427 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+427 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-copy' ]
+428 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-copy
+429 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-copy
+430 info trying registry request attempt 1 at 16:22:50
+431 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-copy
+432 silly addNameRange { name: 'grunt-contrib-watch',
+432 silly addNameRange   range: '>=0.6.1-0 <0.7.0-0',
+432 silly addNameRange   hasData: false }
+433 verbose request where is /artifactory/api/npm/npm-virtual/grunt-svgmin
+434 verbose request registry https://oneartifactory.verizon.com/
+435 verbose url raw /artifactory/api/npm/npm-virtual/grunt-svgmin
+436 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+436 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-svgmin' ]
+437 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-svgmin
+438 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-svgmin
+439 info trying registry request attempt 1 at 16:22:50
+440 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-svgmin
+441 verbose request where is /artifactory/api/npm/npm-virtual/grunt-newer
+442 verbose request registry https://oneartifactory.verizon.com/
+443 verbose url raw /artifactory/api/npm/npm-virtual/grunt-newer
+444 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+444 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-newer' ]
+445 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-newer
+446 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-newer
+447 info trying registry request attempt 1 at 16:22:50
+448 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-newer
+449 verbose request where is /artifactory/api/npm/npm-virtual/grunt-postcss
+450 verbose request registry https://oneartifactory.verizon.com/
+451 verbose url raw /artifactory/api/npm/npm-virtual/grunt-postcss
+452 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+452 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-postcss' ]
+453 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-postcss
+454 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-postcss
+455 info trying registry request attempt 1 at 16:22:50
+456 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-postcss
+457 verbose request where is /artifactory/api/npm/npm-virtual/express
+458 verbose request registry https://oneartifactory.verizon.com/
+459 verbose url raw /artifactory/api/npm/npm-virtual/express
+460 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+460 verbose url resolving   './artifactory/api/npm/npm-virtual/express' ]
+461 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/express
+462 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/express
+463 info trying registry request attempt 1 at 16:22:50
+464 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/express
+465 verbose request where is /artifactory/api/npm/npm-virtual/morgan
+466 verbose request registry https://oneartifactory.verizon.com/
+467 verbose url raw /artifactory/api/npm/npm-virtual/morgan
+468 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+468 verbose url resolving   './artifactory/api/npm/npm-virtual/morgan' ]
+469 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/morgan
+470 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/morgan
+471 info trying registry request attempt 1 at 16:22:50
+472 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/morgan
+473 silly addNameRange { name: 'grunt-jscs',
+473 silly addNameRange   range: '>=1.8.0-0 <2.0.0-0',
+473 silly addNameRange   hasData: false }
+474 silly addNameRange { name: 'autoprefixer-core',
+474 silly addNameRange   range: '>=5.2.1-0 <6.0.0-0',
+474 silly addNameRange   hasData: false }
+475 silly addNameRange { name: 'grunt-google-cdn',
+475 silly addNameRange   range: '>=0.4.3-0 <0.5.0-0',
+475 silly addNameRange   hasData: false }
+476 silly addNameRange { name: 'grunt-ng-annotate',
+476 silly addNameRange   range: '>=0.9.2-0 <0.10.0-0',
+476 silly addNameRange   hasData: false }
+477 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+478 verbose request registry https://oneartifactory.verizon.com/
+479 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+480 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+480 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-jshint' ]
+481 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+482 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+483 info trying registry request attempt 1 at 16:22:50
+484 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+485 verbose request where is /artifactory/api/npm/npm-virtual/grunt-filerev
+486 verbose request registry https://oneartifactory.verizon.com/
+487 verbose url raw /artifactory/api/npm/npm-virtual/grunt-filerev
+488 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+488 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-filerev' ]
+489 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-filerev
+490 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-filerev
+491 info trying registry request attempt 1 at 16:22:50
+492 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-filerev
+493 silly addNameRange { name: 'jasmine-core',
+493 silly addNameRange   range: '>=2.5.2-0 <3.0.0-0',
+493 silly addNameRange   hasData: false }
+494 verbose request where is /artifactory/api/npm/npm-virtual/grunt-wiredep
+495 verbose request registry https://oneartifactory.verizon.com/
+496 verbose url raw /artifactory/api/npm/npm-virtual/grunt-wiredep
+497 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+497 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-wiredep' ]
+498 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-wiredep
+499 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-wiredep
+500 info trying registry request attempt 1 at 16:22:50
+501 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-wiredep
+502 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+503 verbose request registry https://oneartifactory.verizon.com/
+504 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+505 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+505 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-uglify' ]
+506 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+507 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+508 info trying registry request attempt 1 at 16:22:50
+509 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+510 silly addNameRange { name: 'jshint-stylish',
+510 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+510 silly addNameRange   hasData: false }
+511 silly addNameRange { name: 'karma-jasmine',
+511 silly addNameRange   range: '>=1.1.0-0 <2.0.0-0',
+511 silly addNameRange   hasData: false }
+512 silly addNameRange { name: 'phantomjs-prebuilt',
+512 silly addNameRange   range: '>=2.1.14-0 <3.0.0-0',
+512 silly addNameRange   hasData: false }
+513 silly addNameRange { name: 'time-grunt',
+513 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+513 silly addNameRange   hasData: false }
+514 verbose request where is /artifactory/api/npm/npm-virtual/grunt-contrib-watch
+515 verbose request registry https://oneartifactory.verizon.com/
+516 verbose url raw /artifactory/api/npm/npm-virtual/grunt-contrib-watch
+517 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+517 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-contrib-watch' ]
+518 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-watch
+519 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-watch
+520 info trying registry request attempt 1 at 16:22:50
+521 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-watch
+522 silly addNameRange { name: 'jit-grunt',
+522 silly addNameRange   range: '>=0.9.1-0 <0.10.0-0',
+522 silly addNameRange   hasData: false }
+523 silly addNameRange { name: 'karma-phantomjs-launcher',
+523 silly addNameRange   range: '>=1.0.4-0 <2.0.0-0',
+523 silly addNameRange   hasData: false }
+524 silly addNameRange { name: 'karma', range: '>=1.5.0-0 <2.0.0-0', hasData: false }
+525 verbose request where is /artifactory/api/npm/npm-virtual/grunt-jscs
+526 verbose request registry https://oneartifactory.verizon.com/
+527 verbose url raw /artifactory/api/npm/npm-virtual/grunt-jscs
+528 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+528 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-jscs' ]
+529 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-jscs
+530 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-jscs
+531 info trying registry request attempt 1 at 16:22:50
+532 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-jscs
+533 verbose request where is /artifactory/api/npm/npm-virtual/autoprefixer-core
+534 verbose request registry https://oneartifactory.verizon.com/
+535 verbose url raw /artifactory/api/npm/npm-virtual/autoprefixer-core
+536 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+536 verbose url resolving   './artifactory/api/npm/npm-virtual/autoprefixer-core' ]
+537 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/autoprefixer-core
+538 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/autoprefixer-core
+539 info trying registry request attempt 1 at 16:22:50
+540 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/autoprefixer-core
+541 verbose request where is /artifactory/api/npm/npm-virtual/grunt-google-cdn
+542 verbose request registry https://oneartifactory.verizon.com/
+543 verbose url raw /artifactory/api/npm/npm-virtual/grunt-google-cdn
+544 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+544 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-google-cdn' ]
+545 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-google-cdn
+546 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-google-cdn
+547 info trying registry request attempt 1 at 16:22:50
+548 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-google-cdn
+549 verbose request where is /artifactory/api/npm/npm-virtual/grunt-ng-annotate
+550 verbose request registry https://oneartifactory.verizon.com/
+551 verbose url raw /artifactory/api/npm/npm-virtual/grunt-ng-annotate
+552 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+552 verbose url resolving   './artifactory/api/npm/npm-virtual/grunt-ng-annotate' ]
+553 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-ng-annotate
+554 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-ng-annotate
+555 info trying registry request attempt 1 at 16:22:50
+556 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-ng-annotate
+557 verbose request where is /artifactory/api/npm/npm-virtual/jasmine-core
+558 verbose request registry https://oneartifactory.verizon.com/
+559 verbose url raw /artifactory/api/npm/npm-virtual/jasmine-core
+560 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+560 verbose url resolving   './artifactory/api/npm/npm-virtual/jasmine-core' ]
+561 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jasmine-core
+562 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jasmine-core
+563 info trying registry request attempt 1 at 16:22:50
+564 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jasmine-core
+565 verbose request where is /artifactory/api/npm/npm-virtual/jshint-stylish
+566 verbose request registry https://oneartifactory.verizon.com/
+567 verbose url raw /artifactory/api/npm/npm-virtual/jshint-stylish
+568 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+568 verbose url resolving   './artifactory/api/npm/npm-virtual/jshint-stylish' ]
+569 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jshint-stylish
+570 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jshint-stylish
+571 info trying registry request attempt 1 at 16:22:50
+572 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jshint-stylish
+573 verbose request where is /artifactory/api/npm/npm-virtual/karma-jasmine
+574 verbose request registry https://oneartifactory.verizon.com/
+575 verbose url raw /artifactory/api/npm/npm-virtual/karma-jasmine
+576 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+576 verbose url resolving   './artifactory/api/npm/npm-virtual/karma-jasmine' ]
+577 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-jasmine
+578 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-jasmine
+579 info trying registry request attempt 1 at 16:22:50
+580 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-jasmine
+581 verbose request where is /artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+582 verbose request registry https://oneartifactory.verizon.com/
+583 verbose url raw /artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+584 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+584 verbose url resolving   './artifactory/api/npm/npm-virtual/phantomjs-prebuilt' ]
+585 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+586 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+587 info trying registry request attempt 1 at 16:22:50
+588 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+589 verbose request where is /artifactory/api/npm/npm-virtual/time-grunt
+590 verbose request registry https://oneartifactory.verizon.com/
+591 verbose url raw /artifactory/api/npm/npm-virtual/time-grunt
+592 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+592 verbose url resolving   './artifactory/api/npm/npm-virtual/time-grunt' ]
+593 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/time-grunt
+594 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/time-grunt
+595 info trying registry request attempt 1 at 16:22:50
+596 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/time-grunt
+597 verbose request where is /artifactory/api/npm/npm-virtual/jit-grunt
+598 verbose request registry https://oneartifactory.verizon.com/
+599 verbose url raw /artifactory/api/npm/npm-virtual/jit-grunt
+600 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+600 verbose url resolving   './artifactory/api/npm/npm-virtual/jit-grunt' ]
+601 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jit-grunt
+602 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jit-grunt
+603 info trying registry request attempt 1 at 16:22:50
+604 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jit-grunt
+605 verbose request where is /artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+606 verbose request registry https://oneartifactory.verizon.com/
+607 verbose url raw /artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+608 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+608 verbose url resolving   './artifactory/api/npm/npm-virtual/karma-phantomjs-launcher' ]
+609 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+610 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+611 info trying registry request attempt 1 at 16:22:50
+612 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+613 verbose request where is /artifactory/api/npm/npm-virtual/karma
+614 verbose request registry https://oneartifactory.verizon.com/
+615 verbose url raw /artifactory/api/npm/npm-virtual/karma
+616 verbose url resolving [ 'https://oneartifactory.verizon.com/',
+616 verbose url resolving   './artifactory/api/npm/npm-virtual/karma' ]
+617 verbose url resolved https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma
+618 verbose request where is https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma
+619 info trying registry request attempt 1 at 16:22:50
+620 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma
+621 info retry will retry, error on last attempt: Error: socket hang up
+622 info retry will retry, error on last attempt: Error: socket hang up
+623 info retry will retry, error on last attempt: Error: socket hang up
+624 info retry will retry, error on last attempt: Error: socket hang up
+625 info retry will retry, error on last attempt: Error: socket hang up
+626 info retry will retry, error on last attempt: Error: socket hang up
+627 info retry will retry, error on last attempt: Error: socket hang up
+628 info retry will retry, error on last attempt: Error: socket hang up
+629 info retry will retry, error on last attempt: Error: socket hang up
+630 info retry will retry, error on last attempt: Error: socket hang up
+631 info retry will retry, error on last attempt: Error: socket hang up
+632 info retry will retry, error on last attempt: Error: socket hang up
+633 info retry will retry, error on last attempt: Error: socket hang up
+634 info retry will retry, error on last attempt: Error: socket hang up
+635 info retry will retry, error on last attempt: Error: socket hang up
+636 info retry will retry, error on last attempt: Error: socket hang up
+637 info retry will retry, error on last attempt: Error: socket hang up
+638 info retry will retry, error on last attempt: Error: socket hang up
+639 info retry will retry, error on last attempt: Error: socket hang up
+640 info retry will retry, error on last attempt: Error: socket hang up
+641 info retry will retry, error on last attempt: Error: socket hang up
+642 info retry will retry, error on last attempt: Error: socket hang up
+643 info retry will retry, error on last attempt: Error: socket hang up
+644 info retry will retry, error on last attempt: Error: socket hang up
+645 info retry will retry, error on last attempt: Error: socket hang up
+646 info retry will retry, error on last attempt: Error: socket hang up
+647 info retry will retry, error on last attempt: Error: socket hang up
+648 info retry will retry, error on last attempt: Error: socket hang up
+649 info retry will retry, error on last attempt: Error: socket hang up
+650 info retry will retry, error on last attempt: Error: socket hang up
+651 info retry will retry, error on last attempt: Error: socket hang up
+652 info retry will retry, error on last attempt: Error: socket hang up
+653 info retry will retry, error on last attempt: Error: socket hang up
+654 info retry will retry, error on last attempt: Error: socket hang up
+655 info trying registry request attempt 2 at 16:24:16
+656 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt
+657 info trying registry request attempt 2 at 16:24:16
+658 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-concurrent
+659 info trying registry request attempt 2 at 16:24:16
+660 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-clean
+661 info trying registry request attempt 2 at 16:24:16
+662 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/gzippo
+663 info trying registry request attempt 2 at 16:24:16
+664 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-angular-templates
+665 info trying registry request attempt 2 at 16:24:16
+666 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-concat
+667 info trying registry request attempt 2 at 16:24:16
+668 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+669 info trying registry request attempt 2 at 16:24:16
+670 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+671 info trying registry request attempt 2 at 16:24:16
+672 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+673 info trying registry request attempt 2 at 16:24:16
+674 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-svgmin
+675 info trying registry request attempt 2 at 16:24:16
+676 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-usemin
+677 info trying registry request attempt 2 at 16:24:16
+678 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-copy
+679 info trying registry request attempt 2 at 16:24:16
+680 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-connect
+681 info trying registry request attempt 2 at 16:24:16
+682 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-newer
+683 info trying registry request attempt 2 at 16:24:16
+684 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-postcss
+685 info trying registry request attempt 2 at 16:24:16
+686 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-watch
+687 info trying registry request attempt 2 at 16:24:16
+688 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/morgan
+689 info trying registry request attempt 2 at 16:24:16
+690 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-wiredep
+691 info trying registry request attempt 2 at 16:24:16
+692 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-filerev
+693 info trying registry request attempt 2 at 16:24:16
+694 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+695 info trying registry request attempt 2 at 16:24:16
+696 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jasmine-core
+697 info trying registry request attempt 2 at 16:24:16
+698 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/autoprefixer-core
+699 info trying registry request attempt 2 at 16:24:16
+700 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-jscs
+701 info trying registry request attempt 2 at 16:24:16
+702 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-google-cdn
+703 info trying registry request attempt 2 at 16:24:16
+704 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jshint-stylish
+705 info trying registry request attempt 2 at 16:24:16
+706 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/time-grunt
+707 info trying registry request attempt 2 at 16:24:16
+708 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-ng-annotate
+709 info trying registry request attempt 2 at 16:24:16
+710 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+711 info trying registry request attempt 2 at 16:24:16
+712 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-jasmine
+713 info trying registry request attempt 2 at 16:24:16
+714 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/express
+715 info trying registry request attempt 2 at 16:24:16
+716 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+717 info trying registry request attempt 2 at 16:24:16
+718 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jit-grunt
+719 info trying registry request attempt 2 at 16:24:16
+720 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+721 info trying registry request attempt 2 at 16:24:16
+722 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma
+723 info retry will retry, error on last attempt: Error: socket hang up
+724 info retry will retry, error on last attempt: Error: socket hang up
+725 info retry will retry, error on last attempt: Error: socket hang up
+726 info retry will retry, error on last attempt: Error: socket hang up
+727 info retry will retry, error on last attempt: Error: socket hang up
+728 info retry will retry, error on last attempt: Error: socket hang up
+729 info retry will retry, error on last attempt: Error: socket hang up
+730 info retry will retry, error on last attempt: Error: socket hang up
+731 info retry will retry, error on last attempt: Error: socket hang up
+732 info retry will retry, error on last attempt: Error: socket hang up
+733 info retry will retry, error on last attempt: Error: socket hang up
+734 info retry will retry, error on last attempt: Error: socket hang up
+735 info retry will retry, error on last attempt: Error: socket hang up
+736 info retry will retry, error on last attempt: Error: socket hang up
+737 info retry will retry, error on last attempt: Error: socket hang up
+738 info retry will retry, error on last attempt: Error: socket hang up
+739 info retry will retry, error on last attempt: Error: socket hang up
+740 info retry will retry, error on last attempt: Error: socket hang up
+741 info retry will retry, error on last attempt: Error: socket hang up
+742 info retry will retry, error on last attempt: Error: socket hang up
+743 info retry will retry, error on last attempt: Error: socket hang up
+744 info retry will retry, error on last attempt: Error: socket hang up
+745 info retry will retry, error on last attempt: Error: socket hang up
+746 info retry will retry, error on last attempt: Error: socket hang up
+747 info retry will retry, error on last attempt: Error: socket hang up
+748 info retry will retry, error on last attempt: Error: socket hang up
+749 info retry will retry, error on last attempt: Error: socket hang up
+750 info retry will retry, error on last attempt: Error: socket hang up
+751 info retry will retry, error on last attempt: Error: socket hang up
+752 info retry will retry, error on last attempt: Error: socket hang up
+753 info retry will retry, error on last attempt: Error: socket hang up
+754 info retry will retry, error on last attempt: Error: socket hang up
+755 info retry will retry, error on last attempt: Error: socket hang up
+756 info retry will retry, error on last attempt: Error: socket hang up
+757 info trying registry request attempt 3 at 16:26:31
+758 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-cssmin
+759 info trying registry request attempt 3 at 16:26:31
+760 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-postcss
+761 info trying registry request attempt 3 at 16:26:31
+762 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/morgan
+763 info trying registry request attempt 3 at 16:26:31
+764 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-watch
+765 info trying registry request attempt 3 at 16:26:31
+766 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jshint-stylish
+767 info trying registry request attempt 3 at 16:26:31
+768 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-concat
+769 info trying registry request attempt 3 at 16:26:31
+770 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-connect
+771 info trying registry request attempt 3 at 16:26:31
+772 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-uglify
+773 info trying registry request attempt 3 at 16:26:31
+774 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/autoprefixer-core
+775 info trying registry request attempt 3 at 16:26:31
+776 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-newer
+777 info trying registry request attempt 3 at 16:26:31
+778 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-filerev
+779 info trying registry request attempt 3 at 16:26:31
+780 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-htmlmin
+781 info trying registry request attempt 3 at 16:26:31
+782 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-jscs
+783 info trying registry request attempt 3 at 16:26:31
+784 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jasmine-core
+785 info trying registry request attempt 3 at 16:26:31
+786 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/time-grunt
+787 info trying registry request attempt 3 at 16:26:31
+788 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/express
+789 info trying registry request attempt 3 at 16:26:31
+790 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-google-cdn
+791 info trying registry request attempt 3 at 16:26:31
+792 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-jasmine
+793 info trying registry request attempt 3 at 16:26:31
+794 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-copy
+795 info trying registry request attempt 3 at 16:26:31
+796 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma-phantomjs-launcher
+797 info trying registry request attempt 3 at 16:26:31
+798 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-svgmin
+799 info trying registry request attempt 3 at 16:26:31
+800 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-usemin
+801 info trying registry request attempt 3 at 16:26:31
+802 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-ng-annotate
+803 info trying registry request attempt 3 at 16:26:31
+804 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-imagemin
+805 info trying registry request attempt 3 at 16:26:31
+806 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-wiredep
+807 info trying registry request attempt 3 at 16:26:31
+808 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-jshint
+809 info trying registry request attempt 3 at 16:26:31
+810 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-angular-templates
+811 info trying registry request attempt 3 at 16:26:31
+812 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/karma
+813 info trying registry request attempt 3 at 16:26:31
+814 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt
+815 info trying registry request attempt 3 at 16:26:31
+816 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-contrib-clean
+817 info trying registry request attempt 3 at 16:26:31
+818 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/phantomjs-prebuilt
+819 info trying registry request attempt 3 at 16:26:31
+820 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/gzippo
+821 info trying registry request attempt 3 at 16:26:31
+822 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/grunt-concurrent
+823 info trying registry request attempt 3 at 16:26:31
+824 http GET https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/jit-grunt
+825 silly lockFile 157ff666-morgan-1-8-1 morgan@^1.8.1
+826 silly lockFile 157ff666-morgan-1-8-1 morgan@^1.8.1
+827 silly lockFile 8990ac20-grunt-contrib-connect-0-9-0 grunt-contrib-connect@^0.9.0
+828 silly lockFile 8990ac20-grunt-contrib-connect-0-9-0 grunt-contrib-connect@^0.9.0
+829 silly lockFile 9fe93f56-autoprefixer-core-5-2-1 autoprefixer-core@^5.2.1
+830 silly lockFile 9fe93f56-autoprefixer-core-5-2-1 autoprefixer-core@^5.2.1
+831 silly lockFile 224b1ece-grunt-contrib-watch-0-6-1 grunt-contrib-watch@^0.6.1
+832 silly lockFile 224b1ece-grunt-contrib-watch-0-6-1 grunt-contrib-watch@^0.6.1
+833 silly lockFile 90253a49-grunt-postcss-0-5-5 grunt-postcss@^0.5.5
+834 silly lockFile 90253a49-grunt-postcss-0-5-5 grunt-postcss@^0.5.5
+835 silly lockFile 522e2e8d-jshint-stylish-1-0-0 jshint-stylish@^1.0.0
+836 silly lockFile 522e2e8d-jshint-stylish-1-0-0 jshint-stylish@^1.0.0
+837 silly lockFile 039fa302-grunt-contrib-cssmin-1-0-2 grunt-contrib-cssmin@^1.0.2
+838 silly lockFile 039fa302-grunt-contrib-cssmin-1-0-2 grunt-contrib-cssmin@^1.0.2
+839 silly lockFile 305ef1bc-grunt-contrib-uglify-0-7-0 grunt-contrib-uglify@^0.7.0
+840 silly lockFile 305ef1bc-grunt-contrib-uglify-0-7-0 grunt-contrib-uglify@^0.7.0
+841 silly lockFile 47c410cb-grunt-contrib-concat-0-5-0 grunt-contrib-concat@^0.5.0
+842 silly lockFile 47c410cb-grunt-contrib-concat-0-5-0 grunt-contrib-concat@^0.5.0
+843 silly lockFile 99bf181c-grunt-google-cdn-0-4-3 grunt-google-cdn@^0.4.3
+844 silly lockFile 99bf181c-grunt-google-cdn-0-4-3 grunt-google-cdn@^0.4.3
+845 silly lockFile 5ddae01b-time-grunt-1-0-0 time-grunt@^1.0.0
+846 silly lockFile 5ddae01b-time-grunt-1-0-0 time-grunt@^1.0.0
+847 silly lockFile 324c6ebb-grunt-ng-annotate-0-9-2 grunt-ng-annotate@^0.9.2
+848 silly lockFile 324c6ebb-grunt-ng-annotate-0-9-2 grunt-ng-annotate@^0.9.2
+849 silly lockFile c590b3c8-grunt-filerev-2-1-2 grunt-filerev@^2.1.2
+850 silly lockFile c590b3c8-grunt-filerev-2-1-2 grunt-filerev@^2.1.2
+851 silly lockFile 5e9d6320-karma-jasmine-1-1-0 karma-jasmine@^1.1.0
+852 silly lockFile 5e9d6320-karma-jasmine-1-1-0 karma-jasmine@^1.1.0
+853 silly lockFile 5cb00507-grunt-usemin-3-0-0 grunt-usemin@^3.0.0
+854 silly lockFile 5cb00507-grunt-usemin-3-0-0 grunt-usemin@^3.0.0
+855 silly lockFile 125176d8-grunt-contrib-htmlmin-0-4-0 grunt-contrib-htmlmin@^0.4.0
+856 silly lockFile 125176d8-grunt-contrib-htmlmin-0-4-0 grunt-contrib-htmlmin@^0.4.0
+857 silly lockFile 57eb76fd-grunt-jscs-1-8-0 grunt-jscs@^1.8.0
+858 silly lockFile 57eb76fd-grunt-jscs-1-8-0 grunt-jscs@^1.8.0
+859 silly lockFile 359d66a1-grunt-contrib-copy-0-7-0 grunt-contrib-copy@^0.7.0
+860 silly lockFile 359d66a1-grunt-contrib-copy-0-7-0 grunt-contrib-copy@^0.7.0
+861 silly lockFile 333fcb72-grunt-newer-1-1-0 grunt-newer@^1.1.0
+862 silly lockFile 333fcb72-grunt-newer-1-1-0 grunt-newer@^1.1.0
+863 silly lockFile 7471459e-jasmine-core-2-5-2 jasmine-core@^2.5.2
+864 silly lockFile 7471459e-jasmine-core-2-5-2 jasmine-core@^2.5.2
+865 silly lockFile aa9e392f-karma-phantomjs-launcher-1-0-4 karma-phantomjs-launcher@^1.0.4
+866 silly lockFile aa9e392f-karma-phantomjs-launcher-1-0-4 karma-phantomjs-launcher@^1.0.4
+867 silly lockFile 14706f94-grunt-svgmin-2-0-0 grunt-svgmin@^2.0.0
+868 silly lockFile 14706f94-grunt-svgmin-2-0-0 grunt-svgmin@^2.0.0
+869 silly lockFile de105161-grunt-contrib-imagemin-1-0-0 grunt-contrib-imagemin@^1.0.0
+870 silly lockFile de105161-grunt-contrib-imagemin-1-0-0 grunt-contrib-imagemin@^1.0.0
+871 silly lockFile 3f024a3c-express-4-15-2 express@^4.15.2
+872 silly lockFile 3f024a3c-express-4-15-2 express@^4.15.2
+873 silly lockFile 1440f3a2-karma-1-5-0 karma@^1.5.0
+874 silly lockFile 1440f3a2-karma-1-5-0 karma@^1.5.0
+875 silly lockFile 8cd44080-grunt-angular-templates-0-5-7 grunt-angular-templates@^0.5.7
+876 silly lockFile 8cd44080-grunt-angular-templates-0-5-7 grunt-angular-templates@^0.5.7
+877 silly lockFile 73541f84-grunt-0-4-5 grunt@^0.4.5
+878 silly lockFile 73541f84-grunt-0-4-5 grunt@^0.4.5
+879 silly lockFile 5782cb4c-grunt-contrib-jshint-0-11-0 grunt-contrib-jshint@^0.11.0
+880 silly lockFile 5782cb4c-grunt-contrib-jshint-0-11-0 grunt-contrib-jshint@^0.11.0
+881 silly lockFile fa324219-grunt-wiredep-2-0-0 grunt-wiredep@^2.0.0
+882 silly lockFile fa324219-grunt-wiredep-2-0-0 grunt-wiredep@^2.0.0
+883 silly lockFile ca39a60f-grunt-contrib-clean-0-6-0 grunt-contrib-clean@^0.6.0
+884 silly lockFile ca39a60f-grunt-contrib-clean-0-6-0 grunt-contrib-clean@^0.6.0
+885 silly lockFile 70ef5c73-gzippo-0-2-0 gzippo@^0.2.0
+886 silly lockFile 70ef5c73-gzippo-0-2-0 gzippo@^0.2.0
+887 silly lockFile 9b4591b4-jit-grunt-0-9-1 jit-grunt@^0.9.1
+888 silly lockFile 9b4591b4-jit-grunt-0-9-1 jit-grunt@^0.9.1
+889 silly lockFile 2da57e9e-phantomjs-prebuilt-2-1-14 phantomjs-prebuilt@^2.1.14
+890 silly lockFile 2da57e9e-phantomjs-prebuilt-2-1-14 phantomjs-prebuilt@^2.1.14
+891 silly lockFile e5d6a4fb-grunt-concurrent-1-0-0 grunt-concurrent@^1.0.0
+892 silly lockFile e5d6a4fb-grunt-concurrent-1-0-0 grunt-concurrent@^1.0.0
+893 error network socket hang up
+893 error network This is most likely not a problem with npm itself
+893 error network and is related to network connectivity.
+893 error network In most cases you are behind a proxy or have bad network settings.
+893 error network
+893 error network If you are behind a proxy, please make sure that the
+893 error network 'proxy' config is set properly.  See: 'npm help config'
+894 error System Windows_NT 6.1.7601
+895 error command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+896 error cwd C:\Users\z821366\Desktop\Mylocalgitrepo\turtle-command
+897 error node -v v0.10.34
+898 error npm -v 1.4.28
+899 error code ECONNRESET
+900 verbose exit [ 1, true ]

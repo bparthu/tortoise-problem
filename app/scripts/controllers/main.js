@@ -8,8 +8,8 @@
  * Controller of the turtleCommandApp
  */
 angular.module('turtleCommandApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
+  .controller('MainCtrl', function ($scope) {
+    $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
