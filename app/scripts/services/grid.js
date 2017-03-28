@@ -13,7 +13,18 @@ angular.module('turtleCommandApp')
     var MIN = 5;
     var MAX = 30;
     var GRID_SIZE = lodash.random(MIN,MAX);
-    var Blocks=[];
+    var Blocks = {
+      collection: [],
+      getBlocks: function(){
+        return this.collection;
+      },
+      push: function(item){
+        this.collection.push(item);
+      },
+      reset: function(){
+        this.collection = [];
+      }
+    }
 
     function Coordinate(initX,initY){
       this.x = initX;
@@ -26,14 +37,14 @@ angular.module('turtleCommandApp')
         return this;
       },
       generateBlocks: function(){
-        Blocks = [];
+        Blocks.reset();
         var numberOfBlocks = lodash.random(1,Math.ceil(GRID_SIZE/2));
         for(var i=0;i<numberOfBlocks;i++){
           Blocks.push(new Coordinate(lodash.random(1,GRID_SIZE),lodash.random(1,GRID_SIZE)));
         }
       },
       getBlocks: function(){
-        return Blocks;
+        return Blocks.getBlocks();
       },
       setGridSize: function(newSize){
         GRID_SIZE = newSize;

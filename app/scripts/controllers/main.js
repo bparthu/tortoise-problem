@@ -13,9 +13,12 @@ angular.module('turtleCommandApp')
     $scope.inputPattern = '^[flrFLR\\s]{0,}$';
     $scope.Grid = Grid;
     $scope.Turtle = Turtle;
+    Grid.reset();
+    $scope.resetGrid = function(){
+        Grid.reset();
+    }
 
     $scope.commandTurtle = function(inputStr){
-        Grid.reset();
     	Turtle.reset();
     	Compass.reset();
     	for(var i=0;i<inputStr.length;i++){

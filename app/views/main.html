@@ -2,6 +2,7 @@
   <label for="usr">Input Command:</label>
   <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}"/>
   <button ng-click="commandTurtle(inputStr)">Move</button>
+  <button ng-click="resetGrid()">Reset Grid</button>
 </div>
 
 Auto generated Grid Size -> {{Grid.getGridSize()}} <br />
