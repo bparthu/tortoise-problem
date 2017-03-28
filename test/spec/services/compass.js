@@ -29,4 +29,11 @@ describe('Service: Compass', function () {
     expect(Compass.reset()).toBe('N');
   });
 
+  it('should set pointer',function(){
+    Compass.setPointer(3);
+    expect(Compass.getCurrentDirection()).toBe('W');
+    Compass.setDirection('E');
+    expect(Compass.getCurrentDirection()).toBe('E');
+  });
+
 });

@@ -53,6 +53,7 @@ angular.module('turtleCommandApp')
           x += 1;
         }else{
           this.changeDirection(currentDirection);
+          Compass.setDirection(currentDirection);
         }
         return this;
       },
@@ -61,6 +62,7 @@ angular.module('turtleCommandApp')
           x -= 1;
         }else{
           this.changeDirection(currentDirection);
+          Compass.setDirection(currentDirection);
         }
         return this;
       },
@@ -69,6 +71,7 @@ angular.module('turtleCommandApp')
           y += 1;
         }else{
           this.changeDirection(currentDirection);
+          Compass.setDirection(currentDirection);
         }
         return this;
       },
@@ -77,6 +80,7 @@ angular.module('turtleCommandApp')
           y -= 1;
         }else{
           this.changeDirection(currentDirection);
+          Compass.setDirection(currentDirection);
         }
         return this;
       },

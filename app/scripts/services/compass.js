@@ -29,9 +29,15 @@ angular.module('turtleCommandApp')
 			}
 			return directions[pointer];
       	},
+        getCurrentDirection: function(){
+          return directions[pointer];
+        },
         setPointer: function(newPointer){
           pointer = newPointer;
           return this;
+        },
+        setDirection: function(newDirection){
+          pointer = directions.indexOf(newDirection);
         },
       	reset: function(){
       		pointer = 0;
