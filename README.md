@@ -9,19 +9,20 @@ the grid has random obstacles in a few of its cells, given the movement instruct
 final position of turtle and printing the grid state will be an added plus. When there is an
 obstacle, movement is not possible.
 
-## Input:
-FFFRRFLF
+#Live Demo on -
+https://turtle-command.herokuapp.com
 
-## Output:
-2,3 E
-
-#Working prototype:
+#Local Repo Setup:
 clone the repository and run below commands
 
 ```
+npm install -g grunt grunt-cli
 npm install
 bower install
-npm test
+grunt serve  // For running the webapp on localhost
+grunt test   // For running unit test cases
+grunt build  // For building the webapp
+node web.js  // For running built app on node server
 ```
 
 # Design
@@ -32,12 +33,13 @@ npm test
     * ~~Create directions array and have a circular pointer implemented to navigate through direction~~
     * ~~Create a coordinate class (x,y and direction of movement) and instantiate a 'turtle' with move functionality~~
     * ~~Scaffolded yeoman angular app (Tests passing and Heroku auto deploy on Git push to master).~~
-    * code refactor.
-    * Angularize the code (with bootstrap grid for better visualization).
+    * ~~code refactor.~~
+    * ~~Angularize the code.~~
   * On Non-functional requirement (If time permits):
     * ~~Prioritize on writing unit-testable code.~~
-    * Refactor the unit test after "anglarizing" the app.
+    * ~~Refactor the unit test after "anglarizing" the app.~~
     * ~~Host it on heroku.~~
     * Optional: write a Node/ Express and Mongo for storing the history of inputs and outputs.
+    * Optional: Use grids for better UX
    * Future enhancements identified:
       * TBD
