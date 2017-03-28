@@ -14,15 +14,35 @@ angular.module('turtleCommandApp')
     var direction = 'N';
     function moveNorth(turtle,currentDirection){
       turtle.incrementY(currentDirection);
+      if(Grid.isBlock(turtle.getCoordinate())){
+        turtle.decrementY(currentDirection);
+        turtle.changeDirection(currentDirection);
+        Compass.setDirection(currentDirection);
+      }
     }
     function moveEast(turtle,currentDirection){
       turtle.incrementX(currentDirection);
+      if(Grid.isBlock(turtle.getCoordinate())){
+        turtle.decrementX(currentDirection);
+        turtle.changeDirection(currentDirection);
+        Compass.setDirection(currentDirection);
+      }
     }
     function moveSouth(turtle,currentDirection){
       turtle.decrementY(currentDirection);
+      if(Grid.isBlock(turtle.getCoordinate())){
+        turtle.incrementY(currentDirection);
+        turtle.changeDirection(currentDirection);
+        Compass.setDirection(currentDirection);
+      }
     }
     function moveWest(turtle,currentDirection){
       turtle.decrementX(currentDirection);
+      if(Grid.isBlock(turtle.getCoordinate())){
+        turtle.incrementX(currentDirection);
+        turtle.changeDirection(currentDirection);
+        Compass.setDirection(currentDirection);
+      }
     }
     var moveMap = {
       'N' : moveNorth,
@@ -83,6 +103,12 @@ angular.module('turtleCommandApp')
           Compass.setDirection(currentDirection);
         }
         return this;
+      },
+      getCoordinate: function(){
+        return {
+          x: this.getX(),
+          y: this.getY()
+        }
       },
       changeDirection: function(newDirection){
         direction = newDirection;

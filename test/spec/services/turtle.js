@@ -106,4 +106,33 @@ describe('Service: Turtle', function () {
     expect(Compass.getCurrentDirection()).toBe('E');
   });
 
+  it('should return turtle coordinate',function(){
+    Turtle.setX(2);
+    Turtle.setY(3);
+    expect(Turtle.getCoordinate()['x']).toBe(2);
+    expect(Turtle.getCoordinate()['y']).toBe(3);
+  });
+
+  it('should not move when there is a block',function(){
+    Grid.setGridSize(5);
+    var block = {x:2,y:3};
+    Grid.setBlock(block);
+    Turtle.setX(1);
+    Turtle.setY(3);
+    Turtle.changeDirection('E');
+    Compass.setDirection('E');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('1,3 E');
+
+    Turtle.changeDirection('N');
+    Compass.setDirection('N');
+    Turtle.move('R');
+    expect(Turtle.whereAmI()).toBe('1,3 N');
+
+    Turtle.changeDirection('S');
+    Compass.setDirection('S');
+    Turtle.move('L');
+    expect(Turtle.whereAmI()).toBe('1,3 S');
+  });
+
 });

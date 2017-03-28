@@ -43,11 +43,14 @@ angular.module('turtleCommandApp')
         Blocks.reset();
         var numberOfBlocks = lodash.random(1,Math.ceil(GRID_SIZE/2));
         for(var i=0;i<numberOfBlocks;i++){
-          Blocks.push(new Coordinate(lodash.random(1,GRID_SIZE),lodash.random(1,GRID_SIZE)));
+          Blocks.push(new Coordinate(lodash.random(2,GRID_SIZE),lodash.random(2,GRID_SIZE)));
         }
       },
       getBlocks: function(){
         return Blocks.getBlocks();
+      },
+      setBlock: function(block){
+        Blocks.push(block);
       },
       isBlock: function(coordinate){
         return Blocks.isBlock(coordinate);
