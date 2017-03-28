@@ -12,6 +12,24 @@ angular.module('turtleCommandApp')
     var x = 1;
     var y = 1;
     var direction = 'N';
+    function moveNorth(turtle){
+      turtle.incrementX(Grid.getGridSize());
+    }
+    function moveEast(turtle){
+      turtle.incrementY(Grid.getGridSize());
+    }
+    function moveSouth(turtle){
+      turtle.decrementX(Grid.getGridSize());
+    }
+    function moveWest(turtle){
+      turtle.decrementY(Grid.getGridSize());
+    }
+    var moveMap = {
+      'N' : moveNorth,
+      'E' : moveEast,
+      'S' : moveSouth,
+      'W' : moveWest
+    }
     return {
       getX: function () {
         return x;
@@ -66,6 +84,7 @@ angular.module('turtleCommandApp')
           default:
             throw new Error('Invalid Direction');
         }
+        moveMap[this.getDirection()](this);
         return this;
       }
     };
