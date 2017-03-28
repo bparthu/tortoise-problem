@@ -18,6 +18,9 @@ angular.module('turtleCommandApp')
       getBlocks: function(){
         return this.collection;
       },
+      isBlock: function(coordinate){
+        return lodash.filter(this.collection,coordinate).length > 0;
+      },
       push: function(item){
         this.collection.push(item);
       },
@@ -45,6 +48,9 @@ angular.module('turtleCommandApp')
       },
       getBlocks: function(){
         return Blocks.getBlocks();
+      },
+      isBlock: function(coordinate){
+        return Blocks.isBlock(coordinate);
       },
       setGridSize: function(newSize){
         GRID_SIZE = newSize;

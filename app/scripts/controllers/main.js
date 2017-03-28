@@ -16,6 +16,13 @@ angular.module('turtleCommandApp')
     Grid.reset();
     $scope.resetGrid = function(){
         Grid.reset();
+        Turtle.reset();
+        Compass.reset();
+    }
+
+    $scope.resetTurtle = function(){
+        Turtle.reset();
+        Compass.reset();
     }
 
     $scope.commandTurtle = function(inputStr){

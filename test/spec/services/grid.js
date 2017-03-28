@@ -40,4 +40,11 @@ describe('Service: Grid', function () {
     }
   });
 
+  it('should check if given coordinate is a block',function(){
+    Grid.generateBlocks();
+    var test = Grid.getBlocks()[0];
+    expect(Grid.isBlock(test)).toBe(true);
+    expect(Grid.isBlock({x:0,y:0})).toBe(false);
+  });
+
 });
