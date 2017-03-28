@@ -29,6 +29,10 @@ angular.module('turtleCommandApp')
 			}
 			return directions[pointer];
       	},
+        setPointer: function(newPointer){
+          pointer = newPointer;
+          return this;
+        },
       	reset: function(){
       		pointer = 0;
       		return directions[pointer];

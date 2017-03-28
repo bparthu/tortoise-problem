@@ -12,17 +12,17 @@ angular.module('turtleCommandApp')
     var x = 1;
     var y = 1;
     var direction = 'N';
-    function moveNorth(turtle){
-      turtle.incrementY(Grid.getGridSize());
+    function moveNorth(turtle,currentDirection){
+      turtle.incrementY(currentDirection);
     }
-    function moveEast(turtle){
-      turtle.incrementX(Grid.getGridSize());
+    function moveEast(turtle,currentDirection){
+      turtle.incrementX(currentDirection);
     }
-    function moveSouth(turtle){
-      turtle.decrementY(Grid.getGridSize());
+    function moveSouth(turtle,currentDirection){
+      turtle.decrementY(currentDirection);
     }
-    function moveWest(turtle){
-      turtle.decrementX(Grid.getGridSize());
+    function moveWest(turtle,currentDirection){
+      turtle.decrementX(currentDirection);
     }
     var moveMap = {
       'N' : moveNorth,
@@ -36,33 +36,47 @@ angular.module('turtleCommandApp')
         y = 1;
         this.changeDirection('N');
       },
+      setX: function(newX){
+        x = newX;
+      },
+      setY: function(newY){
+        y = newY;
+      },
       getX: function () {
         return x;
       },
       getY: function(){
         return y;
       },
-      incrementX: function(){
+      incrementX: function(currentDirection){
         if(x < Grid.getGridSize()){
           x += 1;
+        }else{
+          this.changeDirection(currentDirection);
         }
         return this;
       },
-      decrementX: function(){
+      decrementX: function(currentDirection){
         if(x > 1){
           x -= 1;
+        }else{
+          this.changeDirection(currentDirection);
         }
         return this;
       },
-      incrementY: function(){
+      incrementY: function(currentDirection){
         if(y < Grid.getGridSize()){
           y += 1;
+        }else{
+          this.changeDirection(currentDirection);
         }
         return this;
       },
-      decrementY: function(){
+      decrementY: function(currentDirection){
         if(y > 1){
           y -= 1;
+        }else{
+          this.changeDirection(currentDirection);
         }
         return this;
       },
@@ -77,6 +91,7 @@ angular.module('turtleCommandApp')
         return this.getX()+','+this.getY()+' '+this.getDirection();
       },
       move: function(command) {
+        var currentDirection = this.getDirection();
         switch(command){
           case 'F':
             break;
@@ -89,7 +104,7 @@ angular.module('turtleCommandApp')
           default:
             throw new Error('Invalid Direction');
         }
-        moveMap[this.getDirection()](this);
+        moveMap[this.getDirection()](this,currentDirection);
         return this;
       }
     };

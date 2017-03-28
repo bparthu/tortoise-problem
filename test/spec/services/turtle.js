@@ -79,4 +79,27 @@ describe('Service: Turtle', function () {
     }
   });
 
+  it('should not change direction when turtle cannot move',function(){
+    Grid.setGridSize(5);
+    Turtle.move('L');
+    Compass.setPointer(0);
+    expect(Turtle.whereAmI()).toBe('1,1 N');
+    Turtle.setY(5);
+    Compass.setPointer(0);
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('1,5 N');
+    Turtle.setX(5);
+    Turtle.setY(5);
+    Compass.setPointer(1);
+    Turtle.changeDirection('E');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('5,5 E');
+    Turtle.setX(5);
+    Turtle.setY(1);
+    Compass.setPointer(1);
+    Turtle.changeDirection('E');
+    Turtle.move('R');
+    expect(Turtle.whereAmI()).toBe('5,1 E');
+  });
+
 });

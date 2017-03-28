@@ -31,6 +31,13 @@ describe('Service: Grid', function () {
 
   it('should set GRID_SIZE',function(){
     expect(Grid.setGridSize(5).getGridSize()).toBe(5);
-  })
+  });
+
+  it('should generate blocks',function(){
+    for(var i=0;i<1000;i++){
+      Grid.generateBlocks();
+      expect(Grid.getBlocks().length).toBeLessThan(Math.ceil(Grid.getGridSize()/2)+1);
+    }
+  });
 
 });
