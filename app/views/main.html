@@ -1,21 +1,17 @@
-<div class="form-group">
-  <label for="usr">Input Command:</label>
-  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}"/>
-  <button ng-click="commandTurtle(inputStr)">Move Turtle</button>
-  <button ng-click="resetTurtle(inputStr)">Reset Turtle</button>
-  <button ng-click="resetGrid()">Reset Grid</button>
-</div>
 
-Auto generated Grid Size -> {{Grid.getGridSize()}} <br />
-Blocks					 -> {{Grid.getBlocks()}} <br />
-Current Turtle Position  -> {{Turtle.whereAmI()}}
 
 
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <div class="form-group">
+  <label for="usr">Input Command:</label>
+  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}"/><br />
+  <button ng-click="commandTurtle(inputStr)">Move Turtle</button>
+  <button ng-click="resetTurtle(inputStr)">Reset Turtle</button>
+  <button ng-click="resetGrid()">Reset Grid</button>
+  </div>
+
+  Auto generated Grid Size -> {{Grid.getGridSize()}} <br />
+  Blocks           -> {{Grid.getBlocks()}} <br />
+  Current Turtle Position  -> {{Turtle.whereAmI()}}
+
 </div>
