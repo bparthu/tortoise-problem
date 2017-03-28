@@ -1,3 +1,12 @@
+<div class="form-group">
+  <label for="usr">Input Command:</label>
+  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}"/>
+  <button ng-click="commandTurtle(inputStr)">Move</button>
+</div>
+
+Auto generated Grid Size -> {{Grid.getGridSize()}} <br />
+Current Turtle Position  -> {{Turtle.whereAmI()}}
+
 <div class="jumbotron">
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">

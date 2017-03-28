@@ -18,6 +18,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'ngPatternRestrict',
     'angularLodashModularized'
   ])
   .config(function ($routeProvider) {

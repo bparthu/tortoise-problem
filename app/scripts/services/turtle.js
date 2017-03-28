@@ -13,16 +13,16 @@ angular.module('turtleCommandApp')
     var y = 1;
     var direction = 'N';
     function moveNorth(turtle){
-      turtle.incrementX(Grid.getGridSize());
-    }
-    function moveEast(turtle){
       turtle.incrementY(Grid.getGridSize());
     }
+    function moveEast(turtle){
+      turtle.incrementX(Grid.getGridSize());
+    }
     function moveSouth(turtle){
-      turtle.decrementX(Grid.getGridSize());
+      turtle.decrementY(Grid.getGridSize());
     }
     function moveWest(turtle){
-      turtle.decrementY(Grid.getGridSize());
+      turtle.decrementX(Grid.getGridSize());
     }
     var moveMap = {
       'N' : moveNorth,
@@ -31,6 +31,11 @@ angular.module('turtleCommandApp')
       'W' : moveWest
     }
     return {
+      reset: function(){
+        x = 1;
+        y = 1;
+        this.changeDirection('N');
+      },
       getX: function () {
         return x;
       },

@@ -63,15 +63,15 @@ describe('Service: Turtle', function () {
   it('should move the turtle based on command',function(){
     Grid.setGridSize(5);
     Turtle.move('F');
-    expect(Turtle.whereAmI()).toBe('2,1 N');
+    expect(Turtle.whereAmI()).toBe('1,2 N');
     Turtle.move('R');
     expect(Turtle.whereAmI()).toBe('2,2 E');
     Turtle.move('R');
-    expect(Turtle.whereAmI()).toBe('1,2 S');
+    expect(Turtle.whereAmI()).toBe('2,1 S');
     Turtle.move('F');
-    expect(Turtle.whereAmI()).toBe('1,2 S');
+    expect(Turtle.whereAmI()).toBe('2,1 S');
     Turtle.move('L');
-    expect(Turtle.whereAmI()).toBe('1,3 E');
+    expect(Turtle.whereAmI()).toBe('3,1 E');
     try{
       Turtle.move('A');
     }catch(e){
