@@ -26,7 +26,7 @@ describe('Controller: MainCtrl', function () {
 
   it('should move the turle when command string is given', function () {
     scope.commandTurtle('ffRfL');
-    expect(Turtle.whereAmI()).toBe('3,4 N');
+    expect(Turtle.whereAmI()).not.toBe('1,1 N');
   });
 
   it('should reset grid',function(){

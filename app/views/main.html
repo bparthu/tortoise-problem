@@ -1,5 +1,7 @@
 
-
+<div class="alert alert-warning">
+    <strong>Input command string (eg. fFlRRf) and click 'Move Turtle' (OR) use 'L' 'F' 'R' buttons respectively.</strong>
+  </div>
 
 <div class="jumbotron">
   <div class="form-group">
@@ -7,15 +9,20 @@
   <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}"/><br />
   <button ng-click="commandTurtle(inputStr)">Move Turtle</button>
   <button ng-click="resetTurtle(inputStr)">Reset Turtle</button>
-  <button ng-click="resetGrid()">Reset Grid</button>
+  <button ng-click="resetGrid()">Reset Grid</button><br /><br />
+  <button ng-click="move('L')">L</button>
+  <button ng-click="move('F')">F</button>
+  <button ng-click="move('R')">R</button>
   </div>
 
-  Auto generated Grid Size -> {{Grid.getGridSize()}} <br />
+  Auto generated Grid Size -> {{Grid.getGridSize()}} x {{Grid.getGridSize()}} <br />
   Blocks           -> {{Grid.getBlocks()}} <br />
-  Current Turtle Position  -> {{Turtle.whereAmI()}} <br /><br/>
-  Movement History: <br />
-  <div ng-repeat="history in movementHistory track by $index">
-    {{history.command}} -> {{history.coordinates.x}}, {{history.coordinates.y}} {{history.direction}} <br />
+  <strong>Current Turtle Position  -> {{Turtle.whereAmI()}} <br /><br/></strong>
+  <div ng-if="movementHistory.length > 0">
+    Movement History: <br />
+    <div ng-repeat="history in movementHistory track by $index">
+      {{history.command}} -> {{history.coordinates.x}}, {{history.coordinates.y}} {{history.direction}} <br />
+    </div>
   </div>
 
 </div>

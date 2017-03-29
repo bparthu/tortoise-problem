@@ -9,7 +9,7 @@
  */
 angular.module('turtleCommandApp')
   .controller('MainCtrl', function ($scope,Grid, Turtle, Compass) {
-    $scope.inputStr = null
+    $scope.inputStr = '';
     $scope.inputPattern = '^[flrFLR\\s]{0,}$';
     $scope.Grid = Grid;
     $scope.Turtle = Turtle;
@@ -42,5 +42,10 @@ angular.module('turtleCommandApp')
             $scope.movementHistory.push(history);
     	}
     };
+
+    $scope.move = function(command){
+        $scope.inputStr += command;
+        $scope.commandTurtle($scope.inputStr);
+    }
 
   });
