@@ -12,6 +12,10 @@
 
   Auto generated Grid Size -> {{Grid.getGridSize()}} <br />
   Blocks           -> {{Grid.getBlocks()}} <br />
-  Current Turtle Position  -> {{Turtle.whereAmI()}}
+  Current Turtle Position  -> {{Turtle.whereAmI()}} <br /><br/>
+  Movement History: <br />
+  <div ng-repeat="history in movementHistory track by $index">
+    {{history.command}} -> {{history.coordinates.x}}, {{history.coordinates.y}} {{history.direction}} <br />
+  </div>
 
 </div>
