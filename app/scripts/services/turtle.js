@@ -104,6 +104,7 @@ angular.module('turtleCommandApp')
         var currentDirection = this.getDirection();
         switch(command){
           case 'F':
+            moveMap[this.getDirection()](this,currentDirection);
             break;
           case 'R':
             this.changeDirection(Compass.goRight());
@@ -114,7 +115,6 @@ angular.module('turtleCommandApp')
           default:
             throw new Error('Invalid Direction');
         }
-        moveMap[this.getDirection()](this,currentDirection);
         return this;
       }
     };

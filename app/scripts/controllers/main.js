@@ -19,12 +19,14 @@ angular.module('turtleCommandApp')
         Grid.reset();
         Turtle.reset();
         Compass.reset();
+        $scope.inputStr = '';
         $scope.movementHistory = [];
     };
 
     $scope.resetTurtle = function(){
         Turtle.reset();
         Compass.reset();
+        $scope.inputStr = '';
         $scope.movementHistory = [];
     };
 

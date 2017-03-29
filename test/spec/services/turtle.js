@@ -65,13 +65,22 @@ describe('Service: Turtle', function () {
     Turtle.move('F');
     expect(Turtle.whereAmI()).toBe('1,2 N');
     Turtle.move('R');
-    expect(Turtle.whereAmI()).toBe('2,2 E');
+    expect(Turtle.whereAmI()).toBe('1,2 E');
     Turtle.move('R');
-    expect(Turtle.whereAmI()).toBe('2,1 S');
+    expect(Turtle.whereAmI()).toBe('1,2 S');
     Turtle.move('F');
-    expect(Turtle.whereAmI()).toBe('2,1 S');
+    expect(Turtle.whereAmI()).toBe('1,1 S');
     Turtle.move('L');
-    expect(Turtle.whereAmI()).toBe('3,1 E');
+    expect(Turtle.whereAmI()).toBe('1,1 E');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('2,1 E');
+    Turtle.move('L');
+    expect(Turtle.whereAmI()).toBe('2,1 N');
+    Turtle.move('L');
+    expect(Turtle.whereAmI()).toBe('2,1 W');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('1,1 W');
+
     try{
       Turtle.move('A');
     }catch(e){
