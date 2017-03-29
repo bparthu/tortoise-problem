@@ -20,7 +20,7 @@
   <strong>Current Turtle Position  -> {{Turtle.whereAmI()}} <br /><br/></strong>
   <div ng-if="movementHistory.length > 0">
     Movement History: <br />
-    <div ng-repeat="history in movementHistory track by $index">
+    <div ng-repeat="history in movementHistory track by $index" class="pre-scrollable">
       {{history.command}} -> {{history.coordinates.x}}, {{history.coordinates.y}} {{history.direction}} <br />
     </div>
   </div>
