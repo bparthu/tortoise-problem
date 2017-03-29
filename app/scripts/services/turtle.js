@@ -16,32 +16,24 @@ angular.module('turtleCommandApp')
       turtle.incrementY(currentDirection);
       if(Grid.isBlock(turtle.getCoordinate())){
         turtle.decrementY(currentDirection);
-        turtle.changeDirection(currentDirection);
-        Compass.setDirection(currentDirection);
       }
     }
     function moveEast(turtle,currentDirection){
       turtle.incrementX(currentDirection);
       if(Grid.isBlock(turtle.getCoordinate())){
         turtle.decrementX(currentDirection);
-        turtle.changeDirection(currentDirection);
-        Compass.setDirection(currentDirection);
       }
     }
     function moveSouth(turtle,currentDirection){
       turtle.decrementY(currentDirection);
       if(Grid.isBlock(turtle.getCoordinate())){
         turtle.incrementY(currentDirection);
-        turtle.changeDirection(currentDirection);
-        Compass.setDirection(currentDirection);
       }
     }
     function moveWest(turtle,currentDirection){
       turtle.decrementX(currentDirection);
       if(Grid.isBlock(turtle.getCoordinate())){
         turtle.incrementX(currentDirection);
-        turtle.changeDirection(currentDirection);
-        Compass.setDirection(currentDirection);
       }
     }
     var moveMap = {
@@ -71,36 +63,24 @@ angular.module('turtleCommandApp')
       incrementX: function(currentDirection){
         if(x < Grid.getGridSize()){
           x += 1;
-        }else{
-          this.changeDirection(currentDirection);
-          Compass.setDirection(currentDirection);
         }
         return this;
       },
       decrementX: function(currentDirection){
         if(x > 1){
           x -= 1;
-        }else{
-          this.changeDirection(currentDirection);
-          Compass.setDirection(currentDirection);
         }
         return this;
       },
       incrementY: function(currentDirection){
         if(y < Grid.getGridSize()){
           y += 1;
-        }else{
-          this.changeDirection(currentDirection);
-          Compass.setDirection(currentDirection);
         }
         return this;
       },
       decrementY: function(currentDirection){
         if(y > 1){
           y -= 1;
-        }else{
-          this.changeDirection(currentDirection);
-          Compass.setDirection(currentDirection);
         }
         return this;
       },

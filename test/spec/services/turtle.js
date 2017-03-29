@@ -79,12 +79,12 @@ describe('Service: Turtle', function () {
     }
   });
 
-  it('should not change direction when turtle cannot move',function(){
+  it('should change direction even if turtle cannot move',function(){
     Grid.setGridSize(5);
     Turtle.move('L');
-    Compass.setPointer(0);
-    expect(Turtle.whereAmI()).toBe('1,1 N');
-    expect(Compass.getCurrentDirection()).toBe('N');
+    expect(Turtle.whereAmI()).toBe('1,1 W');
+    expect(Compass.getCurrentDirection()).toBe('W');
+    Turtle.reset();
     Turtle.setY(5);
     Compass.setPointer(0);
     Turtle.move('F');
@@ -102,8 +102,8 @@ describe('Service: Turtle', function () {
     Compass.setPointer(1);
     Turtle.changeDirection('E');
     Turtle.move('R');
-    expect(Turtle.whereAmI()).toBe('5,1 E');
-    expect(Compass.getCurrentDirection()).toBe('E');
+    expect(Turtle.whereAmI()).toBe('5,1 S');
+    expect(Compass.getCurrentDirection()).toBe('S');
   });
 
   it('should return turtle coordinate',function(){
@@ -127,12 +127,12 @@ describe('Service: Turtle', function () {
     Turtle.changeDirection('N');
     Compass.setDirection('N');
     Turtle.move('R');
-    expect(Turtle.whereAmI()).toBe('1,3 N');
+    expect(Turtle.whereAmI()).toBe('1,3 E');
 
     Turtle.changeDirection('S');
     Compass.setDirection('S');
     Turtle.move('L');
-    expect(Turtle.whereAmI()).toBe('1,3 S');
+    expect(Turtle.whereAmI()).toBe('1,3 E');
   });
 
 });
