@@ -9,10 +9,10 @@ the grid has random obstacles in a few of its cells, given the movement instruct
 final position of turtle and printing the grid state will be an added plus. When there is an
 obstacle, movement is not possible.
 
-#Live Demo on -
+# Live Demo on -
 https://turtle-command.herokuapp.com
 
-#Local Repo Setup:
+# Local Repo Setup:
 clone the repository and run below commands
 
 ```
