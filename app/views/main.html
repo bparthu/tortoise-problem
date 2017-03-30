@@ -18,9 +18,9 @@
   Auto generated Grid Size -> {{Grid.getGridSize()}} x {{Grid.getGridSize()}} <br />
   Blocks           -> {{Grid.getBlocks()}} <br />
   <strong>Current Turtle Position  -> {{Turtle.whereAmI()}} <br /><br/></strong>
-  <div ng-if="movementHistory.length > 0">
+  <div ng-if="movementHistory.length > 0"  class="pre-scrollable">
     Movement History: <br />
-    <div ng-repeat="history in movementHistory track by $index" class="pre-scrollable">
+    <div ng-repeat="history in movementHistory track by $index">
       {{history.command}} -> {{history.coordinates.x}}, {{history.coordinates.y}} {{history.direction}} <br />
     </div>
   </div>
