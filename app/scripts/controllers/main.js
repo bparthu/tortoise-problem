@@ -31,18 +31,22 @@ angular.module('turtleCommandApp')
     };
 
     $scope.commandTurtle = function(inputStr){
-    	Turtle.reset();
-    	Compass.reset();
-        $scope.movementHistory = [];
-    	for(var i=0;i<inputStr.length;i++){
-    		Turtle.move(inputStr[i].toUpperCase());
-            var history = {
-                command: inputStr[i],
-                coordinates: Turtle.getCoordinate(),
-                direction: Turtle.getDirection()
-            }
-            $scope.movementHistory.push(history);
-    	}
+        try{
+        	Turtle.reset();
+        	Compass.reset();
+            $scope.movementHistory = [];
+        	for(var i=0;i<inputStr.length;i++){
+        		Turtle.move(inputStr[i].toUpperCase());
+                var history = {
+                    command: inputStr[i],
+                    coordinates: Turtle.getCoordinate(),
+                    direction: Turtle.getDirection()
+                }
+                $scope.movementHistory.push(history);
+        	}
+        }catch(e){
+            console.log(e.message);
+        }
     };
 
     $scope.move = function(command){

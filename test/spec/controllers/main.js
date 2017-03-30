@@ -51,8 +51,15 @@ describe('Controller: MainCtrl', function () {
     expect(Compass.getCurrentDirection()).toBe('N')
   });
 
-  if('should create movementHistory',function(){
+  it('should create movementHistory',function(){
     scope.commandTurtle('ffRfL');
     expect(scope.movementHistory.length).toBeGreaterThan(0);
   });
+
+  it('should not throw exception if, invalid command is given',function(){
+    spyOn(console,'log');
+    expect(scope.commandTurtle('ffRfV'));
+    expect(console.log).toHaveBeenCalled();
+  });
+
 });

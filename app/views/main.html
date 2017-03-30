@@ -1,13 +1,12 @@
 
 <div class="alert alert-warning">
-    <strong>Input command string (eg. fFlRRf) and click 'Move Turtle' (OR) use 'L' 'F' 'R' buttons respectively.</strong>
+    <strong>Input command string (eg. fFlRRf) (OR) use 'L' 'F' 'R' buttons respectively.</strong>
   </div>
 
 <div class="jumbotron">
   <div class="form-group">
   <label for="usr">Input Command:</label>
-  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}"/><br />
-  <button ng-click="commandTurtle(inputStr)">Move Turtle</button>
+  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}" ng-change="commandTurtle(inputStr)"/><br />
   <button ng-click="resetTurtle(inputStr)">Reset Turtle</button>
   <button ng-click="resetGrid()">Reset Grid</button><br /><br />
   <button ng-click="move('L')">L</button>
