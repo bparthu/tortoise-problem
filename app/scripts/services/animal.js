@@ -8,7 +8,7 @@
  * Factory in the turtleCommandApp.
  */
 angular.module('turtleCommandApp')
-  .factory('Turtle', function (Compass, Grid) {
+  .factory('Animal', function (Compass, Grid) {
     var x = 1;
     var y = 1;
     var direction = 'N';

@@ -6,8 +6,8 @@
 <div class="jumbotron">
   <div class="form-group">
   <label for="usr">Input Command:</label>
-  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}" ng-change="commandTurtle(inputStr)"/><br />
-  <button ng-click="resetTurtle(inputStr)">Reset Turtle</button>
+  <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}" ng-change="commandAnimal(inputStr)"/><br />
+  <button ng-click="resetAnimal(inputStr)">Reset Animal</button>
   <button ng-click="resetGrid()">Reset Grid</button><br /><br />
   <button ng-click="move('L')">L</button>
   <button ng-click="move('F')">F</button>
@@ -16,7 +16,7 @@
 
   Auto generated Grid Size -> {{Grid.getGridSize()}} x {{Grid.getGridSize()}} <br />
   Blocks           -> {{Grid.getBlocks()}} <br />
-  <strong>Current Turtle Position  -> {{Turtle.whereAmI()}} <br /><br/></strong>
+  <strong>Current Animal Position  -> {{Animal.whereAmI()}} <br /><br/></strong>
   <div ng-if="movementHistory.length > 0"  class="pre-scrollable">
     Movement History: <br />
     <div ng-repeat="history in movementHistory track by $index">

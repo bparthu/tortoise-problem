@@ -8,39 +8,39 @@
  * Controller of the turtleCommandApp
  */
 angular.module('turtleCommandApp')
-  .controller('MainCtrl', function ($scope,Grid, Turtle, Compass) {
+  .controller('MainCtrl', function ($scope,Grid, Animal, Compass) {
     $scope.inputStr = '';
     $scope.inputPattern = '^[flrFLR\\s]{0,}$';
     $scope.Grid = Grid;
-    $scope.Turtle = Turtle;
+    $scope.Animal = Animal;
     Grid.reset();
     $scope.movementHistory = [];
     $scope.resetGrid = function(){
         Grid.reset();
-        Turtle.reset();
+        Animal.reset();
         Compass.reset();
         $scope.inputStr = '';
         $scope.movementHistory = [];
     };
 
-    $scope.resetTurtle = function(){
-        Turtle.reset();
+    $scope.resetAnimal = function(){
+        Animal.reset();
         Compass.reset();
         $scope.inputStr = '';
         $scope.movementHistory = [];
     };
 
-    $scope.commandTurtle = function(inputStr){
+    $scope.commandAnimal = function(inputStr){
         try{
-        	Turtle.reset();
+        	Animal.reset();
         	Compass.reset();
             $scope.movementHistory = [];
         	for(var i=0;i<inputStr.length;i++){
-        		Turtle.move(inputStr[i].toUpperCase());
+        		Animal.move(inputStr[i].toUpperCase());
                 var history = {
                     command: inputStr[i],
-                    coordinates: Turtle.getCoordinate(),
-                    direction: Turtle.getDirection()
+                    coordinates: Animal.getCoordinate(),
+                    direction: Animal.getDirection()
                 }
                 $scope.movementHistory.push(history);
         	}
@@ -51,7 +51,7 @@ angular.module('turtleCommandApp')
 
     $scope.move = function(command){
         $scope.inputStr += command;
-        $scope.commandTurtle($scope.inputStr);
+        $scope.commandAnimal($scope.inputStr);
     }
 
   });
