@@ -12,7 +12,7 @@ angular.module('turtleCommandApp')
     $scope.inputStr = '';
     $scope.inputPattern = '^[flrFLR\\s]{0,}$';
     $scope.Grid = Grid;
-    var currentAnimal = new Animal('Turtle');
+    var currentAnimal = Animal.createAnimal('Turtle');
     $scope.Animal = currentAnimal;
     Grid.reset();
     $scope.movementHistory = [];
