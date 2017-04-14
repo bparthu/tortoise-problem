@@ -9,6 +9,7 @@ describe('Controller: MainCtrl', function () {
     scope,
     Grid,
     Animal,
+    Turtle,
     Compass;
 
   // Initialize the controller and a mock scope
@@ -17,6 +18,7 @@ describe('Controller: MainCtrl', function () {
     Grid = _Grid_;
     Grid.setGridSize(10);
     Animal = _Animal_;
+    Turtle = new Animal('Turtle');
     Compass = _Compass_;
     MainCtrl = $controller('MainCtrl', {
       $scope: scope
@@ -26,28 +28,28 @@ describe('Controller: MainCtrl', function () {
 
   it('should move the turle when command string is given', function () {
     scope.commandAnimal('ffRfL');
-    expect(Animal.whereAmI()).not.toBe('1,1 N');
+    expect(Turtle.whereAmI()).not.toBe('1,1 N');
   });
 
   it('should reset grid',function(){
     Grid.setGridSize(1);
-    Animal.setX(2);
-    Animal.setY(3);
+    Turtle.setX(2);
+    Turtle.setY(3);
     Compass.setDirection('E');
     scope.resetGrid();
     expect(Grid.getGridSize()).not.toBe(1);
-    expect(Animal.getCoordinate()['x']).toBe(1);
-    expect(Animal.getCoordinate()['y']).toBe(1);
+    expect(Turtle.getCoordinate()['x']).toBe(1);
+    expect(Turtle.getCoordinate()['y']).toBe(1);
     expect(Compass.getCurrentDirection()).toBe('N')
   });
 
   it('should reset Animal',function(){
-    Animal.setX(2);
-    Animal.setY(3);
+    Turtle.setX(2);
+    Turtle.setY(3);
     Compass.setDirection('E');
     scope.resetGrid();
-    expect(Animal.getCoordinate()['x']).toBe(1);
-    expect(Animal.getCoordinate()['y']).toBe(1);
+    expect(Turtle.getCoordinate()['x']).toBe(1);
+    expect(Turtle.getCoordinate()['y']).toBe(1);
     expect(Compass.getCurrentDirection()).toBe('N')
   });
 

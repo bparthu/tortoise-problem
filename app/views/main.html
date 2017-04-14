@@ -7,7 +7,7 @@
   <div class="form-group">
   <label for="usr">Input Command:</label>
   <input type="text" class="form-control" id="command" ng-model="inputStr" ng-pattern-restrict="{{ inputPattern }}" ng-change="commandAnimal(inputStr)"/><br />
-  <button ng-click="resetAnimal(inputStr)">Reset Animal</button>
+  <button ng-click="resetAnimal(inputStr)">Reset {{Animal.whoAmI()}}</button>
   <button ng-click="resetGrid()">Reset Grid</button><br /><br />
   <button ng-click="move('L')">L</button>
   <button ng-click="move('F')">F</button>

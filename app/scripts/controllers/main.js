@@ -12,19 +12,20 @@ angular.module('turtleCommandApp')
     $scope.inputStr = '';
     $scope.inputPattern = '^[flrFLR\\s]{0,}$';
     $scope.Grid = Grid;
-    $scope.Animal = Animal;
+    var currentAnimal = new Animal('Turtle');
+    $scope.Animal = currentAnimal;
     Grid.reset();
     $scope.movementHistory = [];
     $scope.resetGrid = function(){
         Grid.reset();
-        Animal.reset();
+        currentAnimal.reset();
         Compass.reset();
         $scope.inputStr = '';
         $scope.movementHistory = [];
     };
 
     $scope.resetAnimal = function(){
-        Animal.reset();
+        currentAnimal.reset();
         Compass.reset();
         $scope.inputStr = '';
         $scope.movementHistory = [];
@@ -32,15 +33,15 @@ angular.module('turtleCommandApp')
 
     $scope.commandAnimal = function(inputStr){
         try{
-        	Animal.reset();
+        	currentAnimal.reset();
         	Compass.reset();
             $scope.movementHistory = [];
         	for(var i=0;i<inputStr.length;i++){
-        		Animal.move(inputStr[i].toUpperCase());
+        		currentAnimal.move(inputStr[i].toUpperCase());
                 var history = {
                     command: inputStr[i],
-                    coordinates: Animal.getCoordinate(),
-                    direction: Animal.getDirection()
+                    coordinates: currentAnimal.getCoordinate(),
+                    direction: currentAnimal.getDirection()
                 }
                 $scope.movementHistory.push(history);
         	}
