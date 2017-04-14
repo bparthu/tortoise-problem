@@ -9,21 +9,22 @@
  */
 angular.module('turtleCommandApp')
   .factory('Compass', function () {
-    var directions = ['N','E','S','W'];
-	var pointer = 0;
+  var INDEX_OF_NORTH = 0;
+  var directions = ['N','E','S','W'];
+	var pointer = INDEX_OF_NORTH;
 
     return {
       	goRight: function(){
       		if(pointer === directions.length - 1){
-				pointer = 0;
+				pointer = INDEX_OF_NORTH;
 			}else{
 				pointer += 1;
 			}
 			return directions[pointer];
       	},
       	goLeft: function(){
-      		if(pointer === 0){
-				pointer = directions.length -1;
+      		if(pointer === INDEX_OF_NORTH){
+				pointer = directions.length - 1;
 			}else{
 				pointer -= 1;
 			}
@@ -40,7 +41,7 @@ angular.module('turtleCommandApp')
           pointer = directions.indexOf(newDirection);
         },
       	reset: function(){
-      		pointer = 0;
+      		pointer = INDEX_OF_NORTH;
       		return directions[pointer];
       	}
     };
