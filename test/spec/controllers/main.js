@@ -18,7 +18,7 @@ describe('Controller: MainCtrl', function () {
     Grid = _Grid_;
     Grid.setGridSize(10);
     Animal = _Animal_;
-    Turtle = new Animal('Turtle');
+    Turtle = Animal.createAnimal('Turtle');
     Compass = _Compass_;
     MainCtrl = $controller('MainCtrl', {
       $scope: scope

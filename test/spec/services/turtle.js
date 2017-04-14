@@ -6,13 +6,11 @@ describe('Service: Turtle', function () {
   beforeEach(module('turtleCommandApp'));
 
   // instantiate service
-  var Animal;
   var Turtle;
   var Compass;
   var Grid;
-  beforeEach(inject(function (_Animal_,_Compass_,_Grid_) {
-    Animal = _Animal_;
-    Turtle = new Animal('Turtle');
+  beforeEach(inject(function (_Turtle_,_Compass_,_Grid_) {
+    Turtle = new _Turtle_();
     Compass = _Compass_;
     Grid = _Grid_;
   }));
