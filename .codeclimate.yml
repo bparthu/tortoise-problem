@@ -8,5 +8,5 @@ ratings:
   paths:
   - app/**/*.js
 exclude_paths:
-- spec/**/*
+- test/**/*.js
 - Gruntfile.js
