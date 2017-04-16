@@ -68,6 +68,12 @@ angular.module('turtleCommandApp')
       getMax: function(){
         return MAX;
       },
+      canIMoveTo: function(moveCoordinate){
+        return !this.isBlock(moveCoordinate);
+      },
+      resetBlocks: function(){
+        Blocks.reset();
+      },
       reset: function(){
         this.generateGridSize();
         this.generateBlocks();

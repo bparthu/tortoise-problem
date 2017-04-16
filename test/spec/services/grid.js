@@ -6,9 +6,10 @@ describe('Service: Grid', function () {
   beforeEach(module('turtleCommandApp'));
 
   // instantiate service
-  var Grid;
-  beforeEach(inject(function (_Grid_) {
+  var Grid,lodash;
+  beforeEach(inject(function (_Grid_,_lodash_) {
     Grid = _Grid_;
+    lodash = _lodash_;
   }));
 
   it('should have GRID_SIZE initialized', function () {
@@ -45,6 +46,14 @@ describe('Service: Grid', function () {
     var test = Grid.getBlocks()[0];
     expect(Grid.isBlock(test)).toBe(true);
     expect(Grid.isBlock({x:0,y:0})).toBe(false);
+  });
+
+  it('should tell if i can make a move',function(){
+    Grid.generateBlocks();
+    var testCoordinate = lodash.cloneDeep(Grid.getBlocks()[0]);
+    expect(Grid.canIMoveTo(testCoordinate)).toBe(false);
+    Grid.resetBlocks();
+    expect(Grid.canIMoveTo(testCoordinate)).toBe(true);
   });
 
 });
