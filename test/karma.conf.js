@@ -44,6 +44,22 @@ module.exports = function(config) {
     exclude: [
     ],
 
+    // preprocess matching files before serving them to the browser 
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor 
+    preprocessors: { 
+        'app/scripts/**/*.js': 'coverage' 
+    }, 
+
+    // test results reporter to use 
+    // possible values: 'dots', 'progress' 
+    // available reporters: https://npmjs.org/browse/keyword/karma-reporter 
+    reporters: ['progress','coverage'], 
+    coverageReporter: {
+  reporters: [
+    { type: 'html', dir: 'coverage/', subdir: 'phantomjs' }
+  ]
+},
+
     // web server port
     port: 8080,
 
@@ -62,7 +78,8 @@ module.exports = function(config) {
     // Which plugins to enable
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+      'karma-coverage'
     ],
 
     // Continuous Integration mode

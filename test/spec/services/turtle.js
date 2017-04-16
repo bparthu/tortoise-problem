@@ -101,6 +101,7 @@ describe('Service: Turtle', function () {
     Grid.setGridSize(5);
     var block = {x:2,y:3};
     Grid.setBlock(block);
+    /*block on east*/
     Turtle.setX(1);
     Turtle.setY(3);
     Turtle.changeDirection('E');
@@ -117,6 +118,30 @@ describe('Service: Turtle', function () {
     Compass.setDirection('S');
     Turtle.move('L');
     expect(Turtle.whereAmI()).toBe('1,3 E');
+
+    /* block on south */
+    Turtle.setX(2);
+    Turtle.setY(4);
+    Turtle.changeDirection('S');
+    Compass.setDirection('S');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('2,4 S');
+
+    /* block on west */
+    Turtle.setX(3);
+    Turtle.setY(3);
+    Turtle.changeDirection('W');
+    Compass.setDirection('W');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('3,3 W');
+
+    /* block on North */
+    Turtle.setX(2);
+    Turtle.setY(2);
+    Turtle.changeDirection('N');
+    Compass.setDirection('N');
+    Turtle.move('F');
+    expect(Turtle.whereAmI()).toBe('2,2 N');
   });
 
   it('should tell about the type animal',function(){

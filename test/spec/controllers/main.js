@@ -31,6 +31,14 @@ describe('Controller: MainCtrl', function () {
     expect(Turtle.whereAmI()).not.toBe('1,1 N');
   });
 
+  it('should move turtle in realtime', function(){
+    scope.inputStr = 'R';
+    scope.move('');
+    expect(Turtle.whereAmI()).toBe('1,1 E');
+    scope.move('L');
+    expect(Turtle.whereAmI()).toBe('1,1 N');
+  });
+
   it('should reset grid',function(){
     Grid.setGridSize(1);
     Turtle.setX(2);

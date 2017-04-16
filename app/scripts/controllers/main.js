@@ -18,10 +18,7 @@ angular.module('turtleCommandApp')
     $scope.movementHistory = [];
     $scope.resetGrid = function(){
         Grid.reset();
-        currentAnimal.reset();
-        Compass.reset();
-        $scope.inputStr = '';
-        $scope.movementHistory = [];
+        $scope.resetAnimal();
     };
 
     $scope.resetAnimal = function(){
