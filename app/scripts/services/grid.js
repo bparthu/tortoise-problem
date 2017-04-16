@@ -8,7 +8,7 @@
  * Factory in the turtleCommandApp.
  */
 angular.module('turtleCommandApp')
-  .factory('Grid', function (lodash) {
+  .factory('Grid', function (lodash, Coordinate) {
     
     var MIN = 5;
     var MAX = 30;
@@ -28,12 +28,6 @@ angular.module('turtleCommandApp')
         this.collection = [];
       }
     }
-
-    function Coordinate(initX,initY){
-      this.x = initX;
-      this.y = initY;
-    }
-
     return {
       generateGridSize: function () {
         GRID_SIZE = lodash.random(MIN,MAX);

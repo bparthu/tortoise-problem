@@ -8,11 +8,10 @@
  * Factory in the turtleCommandApp.
  */
 angular.module('turtleCommandApp')
-  .factory('Turtle', function (Compass, Grid) {
+  .factory('Turtle', function (Compass, Grid, Coordinate, lodash) {
     var ANIMAL_NAME = 'Turtle';
-      var x = 1;
-      var y = 1;
-      var direction = 'N';
+    var TurtleCoordinate = new Coordinate(1,1);
+    var direction = 'N';
       /*
         move strategy -
          1. get next move cooordinate of turtle
@@ -20,27 +19,27 @@ angular.module('turtleCommandApp')
          3. make the actual move
       */
       function moveNorth(turtle){
-        var moveCoordinate = turtle.getCoordinate().incrementY();
+        var moveCoordinate = turtle.cloneCurrentCoordinate().incrementY();
         if(Grid.canIMoveTo(moveCoordinate)){
-          turtle.incrementY();
+          TurtleCoordinate.incrementY();
         }
       };
       function moveEast(turtle){
-        var moveCoordinate = turtle.getCoordinate().incrementX();
+        var moveCoordinate = turtle.cloneCurrentCoordinate().incrementX();
         if(Grid.canIMoveTo(moveCoordinate)){
-          turtle.incrementX();
+          TurtleCoordinate.incrementX();
         }
       };
       function moveSouth(turtle){
-        var moveCoordinate = turtle.getCoordinate().decrementY();
+        var moveCoordinate = turtle.cloneCurrentCoordinate().decrementY();
         if(Grid.canIMoveTo(moveCoordinate)){
-          turtle.decrementY();
+          TurtleCoordinate.decrementY();
         }
       };
       function moveWest(turtle){
-        var moveCoordinate = turtle.getCoordinate().decrementX();
+        var moveCoordinate = turtle.cloneCurrentCoordinate().decrementX();
         if(Grid.canIMoveTo(moveCoordinate)){
-          turtle.decrementX();
+          TurtleCoordinate.decrementX();
         }
       };
       var moveMap = {
@@ -55,49 +54,24 @@ angular.module('turtleCommandApp')
             return ANIMAL_NAME;
           };
           this.reset = function(){
-            x = 1;
-            y = 1;
+            TurtleCoordinate.reset();
             this.changeDirection('N');
           };
           this.setX = function(newX){
-            x = newX;
+            TurtleCoordinate.x = newX;
           };
           this.setY = function(newY){
-            y = newY;
+            TurtleCoordinate.y = newY;
           };
           this.getX = function () {
-            return x;
+            return TurtleCoordinate.x;
           };
           this.getY = function(){
-            return y;
+            return TurtleCoordinate.y;
           };
-          this.incrementX = function(){
-            x += 1;
-            return this;
-          };
-          this.decrementX = function(){
-            x -= 1;
-            return this;
-          };
-          this.incrementY = function(){
-            y += 1;
-            return this;
-          };
-          this.decrementY = function(){
-            y -= 1;
-            return this;
-          };
-          this.getCoordinate = function(){
+          this.cloneCurrentCoordinate = function(){
             var self = this;
-            function Coordinate(x,y){
-              this.x = x;
-              this.y = y;
-            }
-            Coordinate.prototype.incrementX = function(){this.x += 1;return this;}
-            Coordinate.prototype.decrementX = function(){this.x -= 1;return this;}
-            Coordinate.prototype.incrementY = function(){this.y += 1;return this;}
-            Coordinate.prototype.decrementY = function(){this.y -= 1;return this;}
-            return new Coordinate(self.getX(),self.getY());
+            return lodash.cloneDeep(TurtleCoordinate);
           };
           this.changeDirection = function(newDirection){
             direction = newDirection;
@@ -107,7 +81,7 @@ angular.module('turtleCommandApp')
             return direction;
           };
           this.whereAmI = function(){
-            return this.getX()+','+this.getY()+' '+this.getDirection();
+            return TurtleCoordinate+' '+this.getDirection();
           };
           this.move = function(command) {
             switch(command){

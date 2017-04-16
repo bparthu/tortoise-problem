@@ -16,7 +16,7 @@
 
   Auto generated Grid Size -> {{Grid.getGridSize()}} x {{Grid.getGridSize()}} <br />
   Blocks           -> {{Grid.getBlocks()}} <br />
-  <strong>Current Animal Position  -> {{Animal.whereAmI()}} <br /><br/></strong>
+  <strong>Current <span ng-bind="Animal.whoAmI()"></span> Position  -> {{Animal.whereAmI()}} <br /><br/></strong>
   <div ng-if="movementHistory.length > 0"  class="pre-scrollable">
     Movement History: <br />
     <div ng-repeat="history in movementHistory track by $index">

@@ -23,31 +23,14 @@ describe('Service: Turtle', function () {
     expect(Turtle.getY()).toBe(1);
   });
 
-  it('should increment or decrement x co-ordinate',function(){
-    Grid.setGridSize(4);
-    expect(Turtle.incrementX().getX()).toBe(2);
-    expect(Turtle.incrementX().getX()).toBe(3);
-    expect(Turtle.incrementX().getX()).toBe(4);
-  });
-
-  it('should increment or decrement y co-ordinate',function(){
-    Grid.setGridSize(4);
-    expect(Turtle.incrementY().getY()).toBe(2);
-    expect(Turtle.incrementY().getY()).toBe(3);
-    expect(Turtle.incrementY().getY()).toBe(4);
-  });
-
   it('should change direction',function(){
     expect(Turtle.changeDirection('S').getDirection()).toBe('S');
   });
 
   it('should tell the co-ordinate of Animal in human readable format',function(){
     Grid.setGridSize(5);
-    Turtle.incrementX();
-    Turtle.incrementX();
-    Turtle.incrementY();
-    Turtle.incrementY();
-    Turtle.incrementY();
+    Turtle.setX(3);
+    Turtle.setY(4)
     Turtle.changeDirection('S');
     expect(Turtle.whereAmI()).toBe('3,4 S');
   });
@@ -110,8 +93,8 @@ describe('Service: Turtle', function () {
   it('should return Animal coordinate',function(){
     Turtle.setX(2);
     Turtle.setY(3);
-    expect(Turtle.getCoordinate()['x']).toBe(2);
-    expect(Turtle.getCoordinate()['y']).toBe(3);
+    expect(Turtle.cloneCurrentCoordinate()['x']).toBe(2);
+    expect(Turtle.cloneCurrentCoordinate()['y']).toBe(3);
   });
 
   it('should not move when there is a block',function(){

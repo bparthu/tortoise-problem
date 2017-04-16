@@ -38,8 +38,8 @@ describe('Controller: MainCtrl', function () {
     Compass.setDirection('E');
     scope.resetGrid();
     expect(Grid.getGridSize()).not.toBe(1);
-    expect(Turtle.getCoordinate()['x']).toBe(1);
-    expect(Turtle.getCoordinate()['y']).toBe(1);
+    expect(Turtle.cloneCurrentCoordinate()['x']).toBe(1);
+    expect(Turtle.cloneCurrentCoordinate()['y']).toBe(1);
     expect(Compass.getCurrentDirection()).toBe('N')
   });
 
@@ -48,8 +48,8 @@ describe('Controller: MainCtrl', function () {
     Turtle.setY(3);
     Compass.setDirection('E');
     scope.resetGrid();
-    expect(Turtle.getCoordinate()['x']).toBe(1);
-    expect(Turtle.getCoordinate()['y']).toBe(1);
+    expect(Turtle.cloneCurrentCoordinate()['x']).toBe(1);
+    expect(Turtle.cloneCurrentCoordinate()['y']).toBe(1);
     expect(Compass.getCurrentDirection()).toBe('N')
   });
 

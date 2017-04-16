@@ -40,7 +40,7 @@ angular.module('turtleCommandApp')
         		currentAnimal.move(inputStr[i].toUpperCase());
                 var history = {
                     command: inputStr[i],
-                    coordinates: currentAnimal.getCoordinate(),
+                    coordinates: currentAnimal.cloneCurrentCoordinate(),
                     direction: currentAnimal.getDirection()
                 }
                 $scope.movementHistory.push(history);
