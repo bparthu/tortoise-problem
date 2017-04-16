@@ -56,7 +56,7 @@ module.exports = function(config) {
     reporters: ['progress','coverage'], 
     coverageReporter: {
   reporters: [
-    { type: 'html', dir: 'coverage/', subdir: 'phantomjs' }
+    { type: 'lcovonly', dir: 'coverage/', subdir: 'phantomjs' }
   ]
 },
 

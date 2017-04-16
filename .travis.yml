@@ -4,3 +4,9 @@ node_js:
 before_install: 
   - npm install -g bower 
   - bower install
+addons:
+  code_climate:
+    repo_token: aa0fe2fa3d0f5f9bc6dd2398d78345e63ff87d6fc0b7e28d1f99571dc179da46
+after_success:
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < coverage/phantomjs/lcov.info
