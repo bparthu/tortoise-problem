@@ -14,11 +14,11 @@ angular.module('turtleCommandApp')
         'Turtle': Turtle
     };
     // Animal factory to remain singleton as it can be injected in multiple controllers
-    // Turtle , other future animals shoud be made to return constructor function
+    // Turtle , other future animals shoud be made to return constructor function and will be instantiated in animal factory
     // Animal factory should remain a single point of entry to instantiate Turtle, other future animals
 
     return {
-      // Animal property can be made into an array, if future enhancement demands multiple animals with different movesets
+      // Animal property could be made into an array, if future enhancement demands multiple animals with different movesets
       animalInst: null,
       createAnimal: function(animal){
         try{

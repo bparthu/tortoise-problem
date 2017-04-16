@@ -16,7 +16,7 @@ angular.module('turtleCommandApp')
       /*
         move strategy -
          1. get next move cooordinate of turtle
-         2. consult with Grid, if the coordinate doesn't contain a block
+         2. consult with Grid, if the coordinate doesn't contain a block and within grid boundry
          3. make the actual move
       */
       function moveNorth(turtle){
@@ -49,7 +49,7 @@ angular.module('turtleCommandApp')
         'S' : moveSouth,
         'W' : moveWest
       };
-
+      /* PLEASE NOTE: return type of turtle / other animals should be a constructor function and it can be instantiated in animal factory */
       return function(){
           this.whoAmI = function(){
             return ANIMAL_NAME;
@@ -72,27 +72,19 @@ angular.module('turtleCommandApp')
             return y;
           };
           this.incrementX = function(){
-            if(x < Grid.getGridSize()){
-              x += 1;
-            }
+            x += 1;
             return this;
           };
           this.decrementX = function(){
-            if(x > 1){
-              x -= 1;
-            }
+            x -= 1;
             return this;
           };
           this.incrementY = function(){
-            if(y < Grid.getGridSize()){
-              y += 1;
-            }
+            y += 1;
             return this;
           };
           this.decrementY = function(){
-            if(y > 1){
-              y -= 1;
-            }
+            y -= 1;
             return this;
           };
           this.getCoordinate = function(){

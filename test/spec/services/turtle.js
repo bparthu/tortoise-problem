@@ -24,25 +24,17 @@ describe('Service: Turtle', function () {
   });
 
   it('should increment or decrement x co-ordinate',function(){
-    Grid.setGridSize(2);
+    Grid.setGridSize(4);
     expect(Turtle.incrementX().getX()).toBe(2);
-    expect(Turtle.incrementX().getX()).toBe(2);
-    Grid.setGridSize(3);
     expect(Turtle.incrementX().getX()).toBe(3);
-    expect(Turtle.decrementX().getX()).toBe(2);
-    expect(Turtle.decrementX().getX()).toBe(1);
-    expect(Turtle.decrementX().getX()).toBe(1);
+    expect(Turtle.incrementX().getX()).toBe(4);
   });
 
   it('should increment or decrement y co-ordinate',function(){
-    Grid.setGridSize(2);
+    Grid.setGridSize(4);
     expect(Turtle.incrementY().getY()).toBe(2);
-    expect(Turtle.incrementY().getY()).toBe(2);
-    Grid.setGridSize(3);
     expect(Turtle.incrementY().getY()).toBe(3);
-    expect(Turtle.decrementY().getY()).toBe(2);
-    expect(Turtle.decrementY().getY()).toBe(1);
-    expect(Turtle.decrementY().getY()).toBe(1);
+    expect(Turtle.incrementY().getY()).toBe(4);
   });
 
   it('should change direction',function(){

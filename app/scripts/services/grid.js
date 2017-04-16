@@ -68,8 +68,11 @@ angular.module('turtleCommandApp')
       getMax: function(){
         return MAX;
       },
+      isCoordinateWithinBoundry: function(moveCoordinate){
+        return moveCoordinate.x >= 1 && moveCoordinate.x <= GRID_SIZE && moveCoordinate.y >= 1 && moveCoordinate.y <= GRID_SIZE;
+      },
       canIMoveTo: function(moveCoordinate){
-        return !this.isBlock(moveCoordinate);
+        return !this.isBlock(moveCoordinate) && this.isCoordinateWithinBoundry(moveCoordinate);
       },
       resetBlocks: function(){
         Blocks.reset();
