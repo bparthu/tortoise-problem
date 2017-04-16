@@ -1,0 +1,7 @@
+ratings:
+  paths:
+  - app/**/*.js
+exclude_paths:
+- test/**/*
+- Gruntfile.js
+- app/**/.html
