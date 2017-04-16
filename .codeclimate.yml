@@ -1,0 +1,12 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+ratings:
+  paths:
+  - app/**/*.js
+exclude_paths:
+- spec/**/*
+- Gruntfile.js
