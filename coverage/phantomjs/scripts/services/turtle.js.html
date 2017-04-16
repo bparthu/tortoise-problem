@@ -22,22 +22,22 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>55/55</span>
+        <span class='fraction'>43/43</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>17/17</span>
+        <span class='fraction'>14/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>55/55</span>
+        <span class='fraction'>43/43</span>
       </div>
     </div>
   </div>
@@ -128,25 +128,7 @@
 83
 84
 85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+86</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -167,27 +149,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">9×</span>
-<span class="cline-any cline-yes">9×</span>
-<span class="cline-any cline-yes">7×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">6×</span>
-<span class="cline-any cline-yes">6×</span>
-<span class="cline-any cline-yes">4×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">19×</span>
+<span class="cline-any cline-yes">13×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">17×</span>
@@ -226,7 +190,7 @@
 <span class="cline-any cline-yes">35×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">22×</span>
-<span class="cline-any cline-yes">60×</span>
+<span class="cline-any cline-yes">73×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">22×</span>
 <span class="cline-any cline-yes">23×</span>
@@ -269,35 +233,17 @@ angular.module('turtleCommandApp')
          2. consult with Grid, if the coordinate doesn't contain a block and within grid boundry
          3. make the actual move
       */
-      function moveNorth(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().incrementY();
+      function moveTurtle(turtle){
+        var moveCoordinate = turtle.cloneCurrentCoordinate()[moveMap[turtle.getDirection()]]();
         if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.incrementY();
+          TurtleCoordinate[moveMap[turtle.getDirection()]]();
         }
-      };
-      function moveEast(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().incrementX();
-        if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.incrementX();
-        }
-      };
-      function moveSouth(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().decrementY();
-        if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.decrementY();
-        }
-      };
-      function moveWest(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().decrementX();
-        if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.decrementX();
-        }
-      };
+      }
       var moveMap = {
-        'N' : moveNorth,
-        'E' : moveEast,
-        'S' : moveSouth,
-        'W' : moveWest
+        'N' : 'incrementY',
+        'E' : 'incrementX',
+        'S' : 'decrementY',
+        'W' : 'decrementX'
       };
       /* PLEASE NOTE: return type of turtle / other animals should be a constructor function and it can be instantiated in animal factory */
       return function(){
@@ -337,7 +283,7 @@ angular.module('turtleCommandApp')
           this.move = function(command) {
             switch(command){
               case 'F':
-                moveMap[this.getDirection()](this);
+                moveTurtle(this);
                 break;
               case 'R':
                 this.changeDirection(Compass.goRight());
@@ -358,7 +304,7 @@ angular.module('turtleCommandApp')
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Apr 16 2017 23:27:01 GMT+0530 (IST)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Apr 16 2017 23:38:41 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

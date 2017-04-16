@@ -18,35 +18,17 @@ angular.module('turtleCommandApp')
          2. consult with Grid, if the coordinate doesn't contain a block and within grid boundry
          3. make the actual move
       */
-      function moveNorth(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().incrementY();
+      function moveTurtle(turtle){
+        var moveCoordinate = turtle.cloneCurrentCoordinate()[moveMap[turtle.getDirection()]]();
         if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.incrementY();
+          TurtleCoordinate[moveMap[turtle.getDirection()]]();
         }
-      };
-      function moveEast(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().incrementX();
-        if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.incrementX();
-        }
-      };
-      function moveSouth(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().decrementY();
-        if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.decrementY();
-        }
-      };
-      function moveWest(turtle){
-        var moveCoordinate = turtle.cloneCurrentCoordinate().decrementX();
-        if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate.decrementX();
-        }
-      };
+      }
       var moveMap = {
-        'N' : moveNorth,
-        'E' : moveEast,
-        'S' : moveSouth,
-        'W' : moveWest
+        'N' : 'incrementY',
+        'E' : 'incrementX',
+        'S' : 'decrementY',
+        'W' : 'decrementX'
       };
       /* PLEASE NOTE: return type of turtle / other animals should be a constructor function and it can be instantiated in animal factory */
       return function(){
@@ -86,7 +68,7 @@ angular.module('turtleCommandApp')
           this.move = function(command) {
             switch(command){
               case 'F':
-                moveMap[this.getDirection()](this);
+                moveTurtle(this);
                 break;
               case 'R':
                 this.changeDirection(Compass.goRight());
