@@ -21,7 +21,7 @@ angular.module('turtleCommandApp')
       function moveTurtle(turtle){
         var moveCoordinate = turtle.cloneCurrentCoordinate()[moveMap[turtle.getDirection()]]();
         if(Grid.canIMoveTo(moveCoordinate)){
-          TurtleCoordinate[moveMap[turtle.getDirection()]]();
+          turtle.setCoordinate(moveCoordinate);
         }
       }
       var moveMap = {
@@ -54,6 +54,10 @@ angular.module('turtleCommandApp')
           this.cloneCurrentCoordinate = function(){
             var self = this;
             return lodash.cloneDeep(TurtleCoordinate);
+          };
+          this.setCoordinate = function(newCoordinate){
+            TurtleCoordinate = newCoordinate;
+            return this;
           };
           this.changeDirection = function(newDirection){
             direction = newDirection;

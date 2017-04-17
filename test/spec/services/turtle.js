@@ -9,10 +9,12 @@ describe('Service: Turtle', function () {
   var Turtle;
   var Compass;
   var Grid;
-  beforeEach(inject(function (_Turtle_,_Compass_,_Grid_) {
+  var Coordinate;
+  beforeEach(inject(function (_Turtle_,_Compass_,_Grid_,_Coordinate_) {
     Turtle = new _Turtle_();
     Compass = _Compass_;
     Grid = _Grid_;
+    Coordinate = _Coordinate_;
   }));
 
   it('should return x co-ordinate', function () {
@@ -144,8 +146,14 @@ describe('Service: Turtle', function () {
     expect(Turtle.whereAmI()).toBe('2,2 N');
   });
 
+  it('should set a new coordinate for  turtle',function(){
+    expect(Turtle.whereAmI()).toBe('1,1 N');
+    expect(Turtle.setCoordinate(new Coordinate(2,3)).whereAmI()).toBe('2,3 N');
+  });
+
   it('should tell about the type animal',function(){
     expect(Turtle.whoAmI()).toBe('Turtle');
+    expect(Turtle.setCoordinate({x: 2,y: 3}))
   });
 
 });
